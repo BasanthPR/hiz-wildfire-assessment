@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d10" for="edge" attr.name="rel" attr.type="string"/>
+<key id="d9" for="node" attr.name="severity" attr.type="string"/>
+<key id="d8" for="node" attr.name="weight" attr.type="string"/>
+<key id="d7" for="node" attr.name="feet_max" attr.type="string"/>
+<key id="d6" for="node" attr.name="feet_min" attr.type="string"/>
+<key id="d5" for="node" attr.name="clause" attr.type="string"/>
+<key id="d4" for="node" attr.name="text" attr.type="string"/>
+<key id="d3" for="node" attr.name="source" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="aliases" attr.type="string"/>
+<key id="d0" for="node" attr.name="node_type" attr.type="string"/>
+<graph edgedefault="directed"><node id="propane_tank">
+  <data key="d0">object</data>
+  <data key="d1">propane,lpg,gas tank,bbq tank,liquid propane,cylinder</data>
+  <data key="d2">Propane or LPG storage tank on residential property</data>
+</node>
+<node id="trash_can">
+  <data key="d0">object</data>
+  <data key="d1">garbage bin,waste bin,recycle bin,plastic bin,garbage can,trash bin</data>
+  <data key="d2">Residential waste or recycling container</data>
+</node>
+<node id="vehicle">
+  <data key="d0">object</data>
+  <data key="d1">car,truck,van,pickup,suv,automobile,rv,boat</data>
+  <data key="d2">Motorized vehicle parked on property</data>
+</node>
+<node id="wood_pile">
+  <data key="d0">object</data>
+  <data key="d1">firewood,woodpile,lumber stack,log pile,stacked wood</data>
+  <data key="d2">Stack of firewood or lumber stored outdoors</data>
+</node>
+<node id="storage_shed">
+  <data key="d0">object</data>
+  <data key="d1">shed,outbuilding,structure</data>
+  <data key="d2">Accessory storage structure on property</data>
+</node>
+<node id="PRC4291_M">
+  <data key="d0">regulation</data>
+  <data key="d3">PRC 4291 Section M</data>
+  <data key="d4">10ft bare mineral soil clearance required around propane tank</data>
+  <data key="d5">PRC 4291 §M</data>
+</node>
+<node id="PRC4291_M_ext">
+  <data key="d0">regulation</data>
+  <data key="d3">PRC 4291 Section M Extended</data>
+  <data key="d4">Additional 10ft no flammable vegetation beyond the mineral soil ring</data>
+  <data key="d5">PRC 4291 §M (extended)</data>
+</node>
+<node id="IBHS_Z1_propane">
+  <data key="d0">regulation</data>
+  <data key="d3">IBHS Wildfire Prepared Home</data>
+  <data key="d4">If &gt;30ft from home is not possible, minimum 10ft clearance plus enclosed 4 sides with concrete block construction</data>
+  <data key="d5">IBHS Zone 1 Propane</data>
+</node>
+<node id="IBHS_Z0_vehicle">
+  <data key="d0">regulation</data>
+  <data key="d3">IBHS Wildfire Prepared Home</data>
+  <data key="d4">Do not park vehicles within 5ft of any structure</data>
+  <data key="d5">IBHS Zone 0 Vehicle</data>
+</node>
+<node id="IBHS_redflag">
+  <data key="d0">regulation</data>
+  <data key="d3">IBHS Wildfire Prepared Home</data>
+  <data key="d4">On red flag warning days, point vehicle toward exit and keep keys inside for rapid evacuation</data>
+  <data key="d5">IBHS Red Flag Vehicle Protocol</data>
+</node>
+<node id="IBHS_Z0_trash_plastic">
+  <data key="d0">regulation</data>
+  <data key="d3">IBHS Wildfire Prepared Home</data>
+  <data key="d4">Plastic trash cans in Zone 0 (0-5ft) are a combustible hazard and must be removed or replaced with metal containers</data>
+  <data key="d5">IBHS Zone 0 Trash (Plastic)</data>
+</node>
+<node id="IBHS_Z0_trash_metal">
+  <data key="d0">regulation</data>
+  <data key="d3">IBHS Wildfire Prepared Home</data>
+  <data key="d4">Metal trash cans are acceptable in Zone 0</data>
+  <data key="d5">IBHS Zone 0 Trash (Metal)</data>
+</node>
+<node id="PRC4291_G">
+  <data key="d0">regulation</data>
+  <data key="d3">PRC 4291 Section G</data>
+  <data key="d4">Relocate exposed wood pile outside Zone 1 unless fully covered with fire-resistant material</data>
+  <data key="d5">PRC 4291 §G</data>
+</node>
+<node id="IBHS_woodpile">
+  <data key="d0">regulation</data>
+  <data key="d3">IBHS Wildfire Prepared Home</data>
+  <data key="d4">Store firewood at least 30ft from structure; maintain 10ft bare mineral soil clearance around the pile</data>
+  <data key="d5">IBHS Firewood Storage</data>
+</node>
+<node id="IBHS_Z1_shed">
+  <data key="d0">regulation</data>
+  <data key="d3">IBHS Wildfire Prepared Home</data>
+  <data key="d4">Place accessory structures at least 10ft from the primary home; maintain 5ft noncombustible buffer around each structure</data>
+  <data key="d5">IBHS Zone 1 Shed</data>
+</node>
+<node id="Zone_0">
+  <data key="d0">zone</data>
+  <data key="d2">Immediate zone: 0-5 ft from structure</data>
+  <data key="d6">0</data>
+  <data key="d7">5</data>
+  <data key="d8">3</data>
+</node>
+<node id="Zone_1">
+  <data key="d0">zone</data>
+  <data key="d2">Intermediate zone: 5-30 ft from structure</data>
+  <data key="d6">5</data>
+  <data key="d7">30</data>
+  <data key="d8">2</data>
+</node>
+<node id="Zone_2">
+  <data key="d0">zone</data>
+  <data key="d2">Extended zone: 30-100 ft from structure</data>
+  <data key="d6">30</data>
+  <data key="d7">100</data>
+  <data key="d8">1</data>
+</node>
+<node id="Propane_in_Zone0">
+  <data key="d0">violation</data>
+  <data key="d9">CRITICAL</data>
+  <data key="d2">Propane tank within 5ft of structure</data>
+</node>
+<node id="Vehicle_within_5ft">
+  <data key="d0">violation</data>
+  <data key="d9">HIGH</data>
+  <data key="d2">Vehicle parked within 5ft of structure</data>
+</node>
+<node id="Plastic_trash_Zone0">
+  <data key="d0">violation</data>
+  <data key="d9">CRITICAL</data>
+  <data key="d2">Plastic trash container in Zone 0</data>
+</node>
+<node id="Woodpile_Zone1_exposed">
+  <data key="d0">violation</data>
+  <data key="d9">HIGH</data>
+  <data key="d2">Exposed wood pile within Zone 1</data>
+</node>
+<node id="Shed_too_close">
+  <data key="d0">violation</data>
+  <data key="d9">MEDIUM</data>
+  <data key="d2">Storage shed less than 10ft from primary structure</data>
+</node>
+<edge source="propane_tank" target="PRC4291_M">
+  <data key="d10">governed_by</data>
+</edge>
+<edge source="propane_tank" target="PRC4291_M_ext">
+  <data key="d10">governed_by</data>
+</edge>
+<edge source="propane_tank" target="IBHS_Z1_propane">
+  <data key="d10">governed_by</data>
+</edge>
+<edge source="propane_tank" target="Propane_in_Zone0">
+  <data key="d10">can_cause</data>
+</edge>
+<edge source="trash_can" target="IBHS_Z0_trash_plastic">
+  <data key="d10">governed_by</data>
+</edge>
+<edge source="trash_can" target="IBHS_Z0_trash_metal">
+  <data key="d10">governed_by</data>
+</edge>
+<edge source="trash_can" target="Plastic_trash_Zone0">
+  <data key="d10">can_cause</data>
+</edge>
+<edge source="vehicle" target="IBHS_Z0_vehicle">
+  <data key="d10">governed_by</data>
+</edge>
+<edge source="vehicle" target="IBHS_redflag">
+  <data key="d10">governed_by</data>
+</edge>
+<edge source="vehicle" target="Vehicle_within_5ft">
+  <data key="d10">can_cause</data>
+</edge>
+<edge source="wood_pile" target="PRC4291_G">
+  <data key="d10">governed_by</data>
+</edge>
+<edge source="wood_pile" target="IBHS_woodpile">
+  <data key="d10">governed_by</data>
+</edge>
+<edge source="wood_pile" target="Woodpile_Zone1_exposed">
+  <data key="d10">can_cause</data>
+</edge>
+<edge source="storage_shed" target="IBHS_Z1_shed">
+  <data key="d10">governed_by</data>
+</edge>
+<edge source="storage_shed" target="Shed_too_close">
+  <data key="d10">can_cause</data>
+</edge>
+<edge source="Zone_0" target="Zone_1">
+  <data key="d10">contained_in</data>
+</edge>
+<edge source="Zone_1" target="Zone_2">
+  <data key="d10">contained_in</data>
+</edge>
+<edge source="Propane_in_Zone0" target="Zone_0">
+  <data key="d10">occurs_in</data>
+</edge>
+<edge source="Vehicle_within_5ft" target="Zone_0">
+  <data key="d10">occurs_in</data>
+</edge>
+<edge source="Plastic_trash_Zone0" target="Zone_0">
+  <data key="d10">occurs_in</data>
+</edge>
+<edge source="Woodpile_Zone1_exposed" target="Zone_1">
+  <data key="d10">occurs_in</data>
+</edge>
+<edge source="Shed_too_close" target="Zone_1">
+  <data key="d10">occurs_in</data>
+</edge>
+</graph></graphml>

@@ -1,0 +1,80 @@
+# ──────────────────────────────────────────────
+# Drone orthomosaic tiles — private parcel data
+# (not redistributable without data-sharing agreement)
+# ──────────────────────────────────────────────
+tiles/
+tiles_naip/
+tiles_naip_sr/
+annotations/
+
+# ──────────────────────────────────────────────
+# Per-tile and per-parcel inference result JSONs
+# (contain parcel-level detection data)
+# ──────────────────────────────────────────────
+results/qwen25vl/
+results/internvl/
+results/geochat/
+results/qwen25vl_ablation/
+results/geochat_ablation/
+results/internvl_ablation/
+results/qwen25vl_parallel/
+results/naip_qwen25vl/
+results/naip_sr_qwen25vl/
+results/annotated/
+
+# ──────────────────────────────────────────────
+# Pipeline run logs (verbose, large)
+# ──────────────────────────────────────────────
+*.log
+run.log
+
+# ──────────────────────────────────────────────
+# OS and editor artifacts
+# ──────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+*.swp
+*.swo
+*~
+
+# ──────────────────────────────────────────────
+# Python
+# ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+.env
+hiz_venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# ──────────────────────────────────────────────
+# Model weights (large binary, download separately)
+# ──────────────────────────────────────────────
+*.bin
+*.safetensors
+*.gguf
+models/
+
+# ──────────────────────────────────────────────
+# IDE and tool settings
+# ──────────────────────────────────────────────
+.vscode/
+.idea/
+.claude/
+*.code-workspace

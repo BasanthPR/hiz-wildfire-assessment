@@ -39,6 +39,27 @@ dataset_analysis_report.txt
 preannotations/
 
 # ──────────────────────────────────────────────
+# hiz_pipeline — private data and inference outputs
+# (source code is included; data is not)
+# ──────────────────────────────────────────────
+hiz_pipeline/tiles/
+hiz_pipeline/tiles_naip/
+hiz_pipeline/tiles_naip_sr/
+hiz_pipeline/annotations/
+hiz_pipeline/results/qwen25vl/
+hiz_pipeline/results/internvl/
+hiz_pipeline/results/geochat/
+hiz_pipeline/results/qwen25vl_ablation/
+hiz_pipeline/results/geochat_ablation/
+hiz_pipeline/results/internvl_ablation/
+hiz_pipeline/results/qwen25vl_parallel/
+hiz_pipeline/results/naip_qwen25vl/
+hiz_pipeline/results/naip_sr_qwen25vl/
+hiz_pipeline/results/annotated/
+hiz_pipeline/*.log
+hiz_pipeline/run.log
+
+# ──────────────────────────────────────────────
 # OS and editor artifacts
 # ──────────────────────────────────────────────
 .DS_Store

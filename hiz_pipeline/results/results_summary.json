@@ -1,0 +1,233 @@
+{
+  "qwen25vl_detection_summary": {
+    "by_class": {
+      "propane_tank": 494,
+      "grass": 18,
+      "trash_can": 687,
+      "car": 312,
+      "vehicle": 266,
+      "wood_pile": 160,
+      "vehicles": 15,
+      "trash_cans": 15,
+      "wood_piles": 7,
+      "tree": 3,
+      "dump_truck": 1,
+      "truck": 4,
+      "trees": 3,
+      "umbrella": 1,
+      "vegetation": 3,
+      "solar_panels": 1,
+      "solar_panel": 1
+    },
+    "by_class_zone": {
+      "vehicle": {
+        "Zone_1": 40,
+        "Zone_2": 199,
+        "Zone_0": 27
+      },
+      "trash_can": {
+        "Zone_0": 134,
+        "Zone_1": 93,
+        "Zone_2": 460
+      },
+      "propane_tank": {
+        "Zone_0": 283,
+        "Zone_1": 39,
+        "Zone_2": 172
+      }
+    },
+    "uncertain": 0,
+    "parse_failures": 0
+  },
+  "internvl_detection_summary": {
+    "by_class": {},
+    "by_class_zone": {
+      "vehicle": {},
+      "trash_can": {},
+      "propane_tank": {}
+    },
+    "uncertain": 0,
+    "parse_failures": 0
+  },
+  "geochat_detection_summary": {
+    "by_class": {},
+    "by_class_zone": {
+      "vehicle": {},
+      "trash_can": {},
+      "propane_tank": {}
+    },
+    "uncertain": 0,
+    "parse_failures": 0
+  },
+  "naip_detection_summary": {
+    "by_class": {
+      "propane_tank": 9,
+      "vehicle": 4
+    },
+    "by_class_zone": {
+      "vehicle": {
+        "Zone_0": 1,
+        "Zone_2": 3
+      },
+      "trash_can": {},
+      "propane_tank": {
+        "Zone_0": 6,
+        "Zone_2": 3
+      }
+    },
+    "uncertain": 0,
+    "parse_failures": 0
+  },
+  "qwen25vl_top_risk": [
+    {
+      "parcel_id": "sar001",
+      "score": 283,
+      "risk_label": "CRITICAL",
+      "violations": 103
+    },
+    {
+      "parcel_id": "sar044",
+      "score": 235,
+      "risk_label": "CRITICAL",
+      "violations": 97
+    },
+    {
+      "parcel_id": "par034",
+      "score": 156,
+      "risk_label": "CRITICAL",
+      "violations": 84
+    },
+    {
+      "parcel_id": "par025",
+      "score": 109,
+      "risk_label": "CRITICAL",
+      "violations": 67
+    },
+    {
+      "parcel_id": "red049",
+      "score": 81,
+      "risk_label": "CRITICAL",
+      "violations": 29
+    },
+    {
+      "parcel_id": "red006",
+      "score": 73,
+      "risk_label": "CRITICAL",
+      "violations": 45
+    },
+    {
+      "parcel_id": "sar004",
+      "score": 65,
+      "risk_label": "CRITICAL",
+      "violations": 34
+    },
+    {
+      "parcel_id": "sar043",
+      "score": 64,
+      "risk_label": "CRITICAL",
+      "violations": 30
+    },
+    {
+      "parcel_id": "red013",
+      "score": 64,
+      "risk_label": "CRITICAL",
+      "violations": 26
+    },
+    {
+      "parcel_id": "fel016",
+      "score": 51,
+      "risk_label": "CRITICAL",
+      "violations": 27
+    }
+  ],
+  "internvl_top_risk": [],
+  "geochat_top_risk": [],
+  "qwen25vl_ablation": {
+    "model": "Qwen2.5-VL-7B-Instruct",
+    "full_run_tile_count": 2051,
+    "ablation_tile_count": 611,
+    "full_detections_total": 2065,
+    "ablation_detections_total": 613,
+    "full_by_class": {
+      "propane_tank": 516,
+      "trash_can": 720,
+      "vehicle": 295,
+      "unknown_cylinder": 11,
+      "car": 292,
+      "trash can": 2,
+      "wood_pile": 160,
+      "vehicles": 14,
+      "trash_cans": 14,
+      "wood_piles": 7,
+      "grass": 18,
+      "truck": 4,
+      "solar_panels": 1,
+      "vegetation": 3,
+      "dump_truck": 1,
+      "tree": 3,
+      "trees": 3,
+      "solar_panel": 1
+    },
+    "ablation_by_class": {
+      "vehicle": 173,
+      "trash_can": 113,
+      "trash can": 80,
+      "propane_tank": 101,
+      "propane tank": 12,
+      "vehicles": 43,
+      "trash cans": 50,
+      "propane tanks": 40,
+      "trash": 1
+    },
+    "full_clause_citation_rate": 0.9162227602905569,
+    "ablation_clause_citation_rate": 0.0
+  },
+  "aerial_limitations": {
+    "total_limitation_mentions": 3065,
+    "by_category": {
+      "other": 2495,
+      "shadow_ambiguity": 356,
+      "canopy_occlusion": 172,
+      "proximity_measurement": 31,
+      "vertical_clearance": 11
+    }
+  },
+  "checklist": [
+    {
+      "label": "Knowledge graph built (346 nodes, 9603 edges)",
+      "done": true
+    },
+    {
+      "label": "All 45 parcels preprocessed, tile manifest complete",
+      "done": true
+    },
+    {
+      "label": "Qwen2.5-VL inference \u2014 2051 tiles, 1991 dets",
+      "done": true
+    },
+    {
+      "label": "InternVL2 inference \u2014 0 tiles, 0 dets",
+      "done": false
+    },
+    {
+      "label": "Ablation study complete (with/without Graph-RAG)",
+      "done": true
+    },
+    {
+      "label": "NAIP public imagery downloaded (26 scenes)",
+      "done": true
+    },
+    {
+      "label": "NAIP inference \u2014 0 tiles, 13 dets",
+      "done": true
+    },
+    {
+      "label": "Annotated bounding box images saved",
+      "done": true
+    },
+    {
+      "label": "Results report generated",
+      "done": true
+    }
+  ]
+}
