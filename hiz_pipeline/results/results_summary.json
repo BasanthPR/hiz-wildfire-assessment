@@ -80,61 +80,61 @@
   },
   "qwen25vl_top_risk": [
     {
-      "parcel_id": "sar001",
+      "parcel_id": "PARCEL_01",
       "score": 283,
       "risk_label": "CRITICAL",
       "violations": 103
     },
     {
-      "parcel_id": "sar044",
+      "parcel_id": "PARCEL_02",
       "score": 235,
       "risk_label": "CRITICAL",
       "violations": 97
     },
     {
-      "parcel_id": "par034",
+      "parcel_id": "PARCEL_03",
       "score": 156,
       "risk_label": "CRITICAL",
       "violations": 84
     },
     {
-      "parcel_id": "par025",
+      "parcel_id": "PARCEL_04",
       "score": 109,
       "risk_label": "CRITICAL",
       "violations": 67
     },
     {
-      "parcel_id": "red049",
+      "parcel_id": "PARCEL_05",
       "score": 81,
       "risk_label": "CRITICAL",
       "violations": 29
     },
     {
-      "parcel_id": "red006",
+      "parcel_id": "PARCEL_06",
       "score": 73,
       "risk_label": "CRITICAL",
       "violations": 45
     },
     {
-      "parcel_id": "sar004",
+      "parcel_id": "PARCEL_07",
       "score": 65,
       "risk_label": "CRITICAL",
       "violations": 34
     },
     {
-      "parcel_id": "sar043",
+      "parcel_id": "PARCEL_08",
       "score": 64,
       "risk_label": "CRITICAL",
       "violations": 30
     },
     {
-      "parcel_id": "red013",
+      "parcel_id": "PARCEL_09",
       "score": 64,
       "risk_label": "CRITICAL",
       "violations": 26
     },
     {
-      "parcel_id": "fel016",
+      "parcel_id": "PARCEL_10",
       "score": 51,
       "risk_label": "CRITICAL",
       "violations": 27

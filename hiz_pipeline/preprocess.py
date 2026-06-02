@@ -1,7 +1,7 @@
 """
 preprocess.py
 HIZ-VLM Pipeline — Step 4: Dataset Preprocessing
-Processes all 45 Henri parcel GeoTIFFs:
+Processes all 45 consented parcel GeoTIFFs:
   4a. Read & validate
   4b. Normalize RGB to uint8
   4c. Extract & process CHM Band 4
@@ -344,7 +344,7 @@ def main():
 
     if not tif_files:
         sys.exit(f"No GeoTIFF files found in {HENRI_DIR}. "
-                 f"Check that Henri data is at {HENRI_DIR}.")
+                 f"Check that drone orthomosaic data is at {HENRI_DIR}.")
 
     print(f"Found {len(tif_files)} GeoTIFF files in {HENRI_DIR}")
     TILES_DIR.mkdir(parents=True, exist_ok=True)

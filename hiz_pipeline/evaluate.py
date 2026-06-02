@@ -269,7 +269,7 @@ def write_md_report(report_data: dict, output_path: Path):
         "# HIZ-VLM Inference Pipeline — Results Report",
         f"**Research:** Basanth Periyapatna Roopa Kumar, SJSU WIRC  ",
         f"**Models:** {model_label}  ",
-        f"**Dataset:** Henri's 45 consented parcel orthomosaics (2024) + "
+        f"**Dataset:** 45 consented parcel orthomosaics (2024) + "
         f"NAIP public aerial imagery  ",
         f"**Privacy:** LOCAL INFERENCE ONLY — data never sent to external APIs  ",
         "",

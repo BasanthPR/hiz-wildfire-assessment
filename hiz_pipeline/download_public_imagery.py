@@ -6,7 +6,7 @@ Downloads NAIP (National Agriculture Imagery Program) tiles for the 5 HIZ
 research sites from Microsoft Planetary Computer (free, no auth required).
 NAIP 2022 CA: 0.6 m GSD true-color orthomosaic.
 
-Sites (from Brillon et al.):
+Sites:
   fel  — Felton, Santa Cruz County
   red  — Redwood Estates, Santa Cruz County
   sar  — Saratoga, Santa Clara County
@@ -29,7 +29,7 @@ from pathlib import Path
 import requests
 
 # ── Site bounding boxes (WGS-84: min_lon, min_lat, max_lon, max_lat) ──────────
-# Derived from parcel centroids in Brillon et al. / Henri's manuscript.
+# Bounding boxes derived from study-site parcel centroids.
 SITE_BBOXES = {
     "fel": [-122.08, 37.03, -122.02, 37.09],   # Felton, Santa Cruz Mtns
     "red": [-122.04, 37.05, -121.98, 37.11],   # Redwood Estates

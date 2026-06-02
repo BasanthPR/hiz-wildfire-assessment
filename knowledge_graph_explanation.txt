@@ -524,13 +524,12 @@ MASTER SCRIPT AND RE-RUN INSTRUCTIONS
 ======================================================================
 
 Script location:
-  /Users/basanthyajman/Documents/HIZ/AI for HIZ/build_knowledge_graph.py
+  build_knowledge_graph.py
 
 To re-run the full pipeline:
   /opt/miniconda3/bin/python3 build_knowledge_graph.py
 
-All 13 output files will be regenerated in:
-  /Users/basanthyajman/Documents/HIZ/AI for HIZ/
+All 13 output files will be regenerated in the repository root directory.
 
 NOTE: Uses /opt/miniconda3/bin/python3 because that is the Python environment
 where all dependencies (pdfplumber, networkx, pyvis, etc.) are installed.

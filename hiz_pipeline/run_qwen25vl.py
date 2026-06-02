@@ -11,7 +11,7 @@ Loading priority:
   2. BitsAndBytes 8-bit quantized (~8 GB) on MPS
   3. float16 on CPU (slow fallback)
 
-PRIVACY: LOCAL INFERENCE ONLY — Henri's consented parcel data.
+PRIVACY: LOCAL INFERENCE ONLY — consented parcel orthomosaic data.
 """
 
 import csv

@@ -38,7 +38,7 @@ $PY -c "import rasterio" 2>/dev/null \
 
 echo "  All packages ready."
 
-# ── 1. Preprocess Henri's drone data (already done — skip if manifest exists) ─
+# ── 1. Preprocess drone orthomosaic data (skip if manifest exists) ─────────────
 echo ""
 echo "[1] Checking tile manifest..."
 if [ -f "$PIPE/tiles/tile_manifest.csv" ]; then
@@ -64,7 +64,7 @@ else
     $PY "$PIPE/preprocess_naip.py"
 fi
 
-# ── 4. Qwen2.5-VL inference on Henri's drone tiles ───────────────────────────
+# ── 4. Qwen2.5-VL inference on drone tiles ────────────────────────────────────
 echo ""
 echo "[4] Running Qwen2.5-VL inference on drone tiles (3628 tiles)..."
 echo "  NOTE: This will take ~3-8 hours depending on quantization mode."

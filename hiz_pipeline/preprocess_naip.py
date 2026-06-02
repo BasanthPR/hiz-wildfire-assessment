@@ -5,9 +5,9 @@ HIZ-VLM Pipeline — NAIP Public Imagery Preprocessing
 Tiles NAIP GeoTIFF scenes into 512-pixel patches, detects building
 footprints with Grounding DINO (or falls back to center-crop), assigns
 zone labels from pixel distances, and writes a tile manifest identical
-in schema to the Henri manifest so run_qwen25vl_naip.py can consume it.
+in schema to the drone tile manifest so run_qwen25vl_naip.py can consume it.
 
-Key differences from preprocess.py (Henri drone data):
+Key differences from preprocess.py (drone orthomosaic data):
   - No CHM band — NAIP is 4-band (RGBI) or 3-band (RGB)
   - GSD ≈ 60 cm (vs 1–3 cm) → zone radii in pixels are much smaller
   - Building detection via Grounding DINO text prompt "building . house . roof"

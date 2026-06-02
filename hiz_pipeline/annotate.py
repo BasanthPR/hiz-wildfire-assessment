@@ -206,7 +206,7 @@ def annotate_parcel(parcel_id: str, model_name: str, results_dir: Path) -> bool:
     header_lines = [
         f"Parcel: {parcel_id}  |  Model: {model_name}  |  GSD: {gsd_cm} cm/px",
         f"Risk Score: {risk_score}  |  Risk Level: {risk_label}  |  Violations: {n_viol}",
-        f"PRIVACY: LOCAL USE ONLY — Henri consented parcels (SJSU WIRC 2024)",
+        f"PRIVACY: LOCAL USE ONLY — consented parcel orthomosaics (SJSU WIRC 2024)",
     ]
     for i, line in enumerate(header_lines):
         y_pos = 8 + i * 18

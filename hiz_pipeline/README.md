@@ -26,7 +26,7 @@ The pipeline is organized as a numbered sequence of idempotent steps, coordinate
 
 ```
 Step 0   setup_env.sh          Environment and dependency setup
-Step 1   preprocess.py          Tile Henri's drone orthos, write tile manifest
+Step 1   preprocess.py          Tile drone orthomosaics, write tile manifest
 Step 2   download_public_imagery.py  Fetch NAIP 60cm public imagery (5 sites)
 Step 3   preprocess_naip.py     Tile NAIP imagery
 Step 3b  preprocess_naip_sr.py  Tile NAIP + super-resolution upscaled tiles
@@ -43,7 +43,7 @@ Step 10  evaluate.py            Generate results report and summary JSON
 
 ### Core Modules
 
-**`preprocess.py`** loads 4-band parcel GeoTIFFs from the Henri dataset, stretches each RGB band using the 2nd and 98th percentile, chips the image at 500 x 500 pixel tiles with 25% overlap, annotates each chip with a zone label derived from the CHM band, draws coloured zone-boundary circles on the tile for VLM spatial reference, and writes the tile PNG alongside a tile manifest CSV and a per-parcel metadata JSON.
+**`preprocess.py`** loads 4-band parcel GeoTIFFs from the drone orthomosaic dataset, stretches each RGB band using the 2nd and 98th percentile, chips the image at 500 x 500 pixel tiles with 25% overlap, annotates each chip with a zone label derived from the CHM band, draws coloured zone-boundary circles on the tile for VLM spatial reference, and writes the tile PNG alongside a tile manifest CSV and a per-parcel metadata JSON.
 
 **`prompts.py`** implements the Geo-CoT prompting framework. The system message establishes the model's role as a defensible-space compliance assessor with instructions to cite specific regulatory clauses. The few-shot block provides three demonstrations of the PERCEIVE / LOCATE / RETRIEVE / ASSESS reasoning trace: one VIOLATION case (propane tank in Zone 0), one COMPLIANT case (vehicle at 18 ft in Zone 1), and one UNCERTAIN case (partially occluded cylindrical object). The `build_prompt` function assembles the system message, regulatory context retrieved from the knowledge graph, the few-shot block, and the user instruction into a structured prompt dictionary. The `self_consistency_vote` function aggregates multiple model responses by majority vote on the compliance_status, severity, and confidence fields.
 
@@ -121,7 +121,7 @@ The same five sites as the AI-for-HIZ CLIP pipeline:
 
 ```
 .
-├── preprocess.py                  # Tile Henri drone orthos, build manifest
+├── preprocess.py                  # Tile drone orthomosaics, build manifest
 ├── preprocess_naip.py             # Tile NAIP public imagery
 ├── preprocess_naip_sr.py          # Tile NAIP super-resolution imagery
 ├── download_public_imagery.py     # Fetch NAIP tiles from Planetary Computer
@@ -205,9 +205,9 @@ bash ~/hiz_pipeline/run_full_pipeline.sh
 
 To resume from a specific step after a crash, set the appropriate `SKIP_*` flags inside `run_full_pipeline.sh` or run individual scripts directly.
 
-### Preprocessing Henri Drone Data
+### Preprocessing Drone Orthomosaic Data
 
-If the tile manifest does not exist, preprocess the Henri drone orthos first:
+If the tile manifest does not exist, preprocess the drone orthomosaics first:
 
 ```bash
 python3 ~/hiz_pipeline/preprocess.py

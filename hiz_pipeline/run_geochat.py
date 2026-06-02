@@ -1,7 +1,7 @@
 """
 run_geochat.py  (MPS-patched rewrite)
 HIZ-VLM Pipeline — Step 6: GeoChat-7B Inference on Apple M4 MPS
-PRIVACY: LOCAL INFERENCE ONLY — Henri's consented parcel data.
+PRIVACY: LOCAL INFERENCE ONLY — consented parcel orthomosaic data.
 """
 
 import os, sys, gc, json, csv, time, re, traceback

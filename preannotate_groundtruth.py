@@ -4,7 +4,7 @@ preannotate_groundtruth.py
 OWLv2 open-vocabulary object detection pre-annotation for ground truth creation.
 
 Uses google/owlv2-base-patch16-ensemble (pure transformers, MPS-native) to detect
-the 33 HIZ object classes in Henri's 45 parcel orthomosaics.  Outputs are ready
+the 33 HIZ object classes in the 45 consented parcel orthomosaics.  Outputs are ready
 to import into Label Studio for human verification.
 
 Why OWLv2, not GroundingDINO:
@@ -35,7 +35,7 @@ Run
 
 Privacy
 -------
-  Henri data is LOCAL INFERENCE ONLY. No images sent to external APIs.
+  Drone orthomosaic data is LOCAL INFERENCE ONLY. No images sent to external APIs.
 """
 
 import argparse
@@ -54,7 +54,7 @@ from transformers import Owlv2ForObjectDetection, Owlv2Processor
 
 # ── Paths ────────────────────────────────────────────────────────────────────
 BASE_DIR   = Path(__file__).parent
-PARCEL_DIR = Path("/Users/basanthyajman/hiz_data/henri")
+PARCEL_DIR = Path.home() / "hiz_data" / "henri"
 OUT_DIR    = BASE_DIR / "preannotations"
 IMG_DIR    = OUT_DIR / "images"
 ANN_DIR    = OUT_DIR / "annotations"

@@ -1,7 +1,7 @@
 # HIZ-VLM Inference Pipeline — Results Report
 **Research:** Basanth Periyapatna Roopa Kumar, SJSU WIRC  
 **Models:** Qwen2.5-VL-7B-Instruct · InternVL2-8B · GeoChat-7B  
-**Dataset:** Henri's 45 consented parcel orthomosaics (2024) + NAIP public aerial imagery  
+**Dataset:** 45 consented parcel orthomosaics (2024) + NAIP public aerial imagery  
 **Privacy:** LOCAL INFERENCE ONLY — data never sent to external APIs  
 
 ---
@@ -47,16 +47,16 @@
 
 | Rank | Parcel ID | Risk Score | Risk Level | Violations |
 |---|---|---|---|---|
-| 1 | sar001 | 283 | CRITICAL | 103 |
-| 2 | sar044 | 235 | CRITICAL | 97 |
-| 3 | par034 | 156 | CRITICAL | 84 |
-| 4 | par025 | 109 | CRITICAL | 67 |
-| 5 | red049 | 81 | CRITICAL | 29 |
-| 6 | red006 | 73 | CRITICAL | 45 |
-| 7 | sar004 | 65 | CRITICAL | 34 |
-| 8 | sar043 | 64 | CRITICAL | 30 |
-| 9 | red013 | 64 | CRITICAL | 26 |
-| 10 | fel016 | 51 | CRITICAL | 27 |
+| 1 | PARCEL_01 | 283 | CRITICAL | 103 |
+| 2 | PARCEL_02 | 235 | CRITICAL | 97 |
+| 3 | PARCEL_03 | 156 | CRITICAL | 84 |
+| 4 | PARCEL_04 | 109 | CRITICAL | 67 |
+| 5 | PARCEL_05 | 81 | CRITICAL | 29 |
+| 6 | PARCEL_06 | 73 | CRITICAL | 45 |
+| 7 | PARCEL_07 | 65 | CRITICAL | 34 |
+| 8 | PARCEL_08 | 64 | CRITICAL | 30 |
+| 9 | PARCEL_09 | 64 | CRITICAL | 26 |
+| 10 | PARCEL_10 | 51 | CRITICAL | 27 |
 
 ### InternVL2-8B — Top 10 Highest-Risk Parcels
 

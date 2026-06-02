@@ -155,7 +155,7 @@ Qwen2.5-VL-7B-Instruct with Geo-CoT prompting and Graph-RAG context injection ov
 
 The following are not committed because they constitute private research data, copyrighted standards, or large binary artifacts:
 
-- Raw drone ortho-mosaics (Henri dataset, 45 parcels, approximately 20 GB, consented private data)
+- Raw drone ortho-mosaics (45 parcels, approximately 20 GB, consented private data — available under data-sharing agreement)
 - Drone tile images for VLM inference (hiz_pipeline/tiles/)
 - NAIP tile images (hiz_pipeline/tiles_naip/, hiz_pipeline/tiles_naip_sr/)
 - Per-tile inference result JSONs for all models

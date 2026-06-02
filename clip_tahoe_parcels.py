@@ -6,9 +6,9 @@ compatible with vlm_inference_pipeline.py and preannotate_groundtruth.py.
 
 Inputs
 ------
-  Area RGB TIFs    /Users/basanthyajman/hiz_data/henri/r*.tif
+  Area RGB TIFs    ~/hiz_data/henri/r*.tif
                    EPSG:2226  0.25m GSD  3-band uint8  12000×12000 px
-  Building footps  /Users/basanthyajman/hiz_data/DMI-21085_Building_20211119.shp
+  Building footps  ~/hiz_data/<building_footprint>.shp
                    EPSG:2226  37,791 polygons
 
 Processing
@@ -48,10 +48,10 @@ import shapefile
 from shapely.geometry import shape as shapely_shape, box as shapely_box, mapping
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
-TILE_DIR  = Path("/Users/basanthyajman/hiz_data/henri")
-SHP_PATH  = Path("/Users/basanthyajman/hiz_data/DMI-21085_Building_20211119.shp")
+TILE_DIR  = Path.home() / "hiz_data" / "henri"
+SHP_PATH  = Path.home() / "hiz_data" / "building_footprints.shp"  # supply your building footprint shapefile here
 OUT_DIR   = TILE_DIR                        # same folder → pipeline picks them up automatically
-IDX_PATH  = Path("/Users/basanthyajman/Documents/HIZ/AI for HIZ/tahoe_parcel_index.json")
+IDX_PATH  = Path(__file__).parent / "tahoe_parcel_index.json"
 
 # ── Constants ─────────────────────────────────────────────────────────────────
 MIN_AREA_SQFT    = 800      # minimum building footprint (sq ft) — removes sheds/garages

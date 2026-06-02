@@ -9,7 +9,7 @@ needed — cosine similarity between chip embeddings and per-class text prompts.
 
 Inputs
 ------
-  Henri drone orthomosaics   /Users/basanthyajman/hiz_data/henri/
+  Drone orthomosaics         ~/hiz_data/henri/
   CLIP model                 openai/clip-vit-large-patch14-336 (HF cache)
   Graph-RAG lookup           AI for HIZ/graph_rag_lookup.py
 
@@ -46,7 +46,7 @@ Zone assignment
 
 Privacy
 -------
-  Henri data is LOCAL INFERENCE ONLY. No images sent to external APIs.
+  Drone orthomosaic data is LOCAL INFERENCE ONLY. No images sent to external APIs.
 
 Outputs (all in AI for HIZ/)
 -----------------------------
@@ -56,12 +56,13 @@ Outputs (all in AI for HIZ/)
 
 Run
 ---
-  cd "/Users/basanthyajman/Documents/HIZ/AI for HIZ"
-  /opt/miniconda3/bin/python3 vlm_inference_pipeline.py [--parcels N] [--resume]
+  cd ~/Documents/HIZ/AI\ for\ HIZ
+  python3 vlm_inference_pipeline.py [--parcels N] [--resume]
 """
 
 import os
 import sys
+from pathlib import Path
 import json
 import time
 import argparse
@@ -78,7 +79,7 @@ from transformers import CLIPModel, CLIPProcessor
 
 # ── Path setup ────────────────────────────────────────────────────────────────
 BASE_DIR  = os.path.dirname(os.path.abspath(__file__))
-HENRI_DIR = "/Users/basanthyajman/hiz_data/henri"
+HENRI_DIR = str(Path.home() / "hiz_data" / "henri")
 CLIP_MODEL_ID = "openai/clip-vit-large-patch14-336"
 
 sys.path.insert(0, BASE_DIR)
@@ -173,7 +174,7 @@ def load_parcel(tif_path: str):
         r   = src.read(1).astype(np.float32)
         g   = src.read(2).astype(np.float32)
         b   = src.read(3).astype(np.float32)
-        # CHM is band 4 for Henri parcels; synthesized from building footprints
+        # CHM is band 4; synthesized from building footprints for Tahoe Donner parcels
         # for Tahoe area clips. Fall back to zeros if the file has only 3 bands.
         if src.count >= CHM_BAND:
             chm = src.read(CHM_BAND).astype(np.float32)
