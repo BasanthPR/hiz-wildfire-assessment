@@ -33,23 +33,26 @@ from pyvis.network import Network
 BASE_DIR   = os.path.dirname(os.path.abspath(__file__))
 PARENT_DIR = os.path.dirname(BASE_DIR)
 
-WFPH_PDF   = os.path.join(BASE_DIR,   "WFPH-Technical-Standard.pdf")
+WFPH_PDF   = os.path.join(PARENT_DIR, "regulatory_sources", "WFPH-Technical-Standard.pdf")
 TAXO_XLSX  = os.path.join(PARENT_DIR, "2024 HIZ In-Situ Data for Caitlin.xlsx")
 
+REG_DIR    = os.path.join(PARENT_DIR, "regulatory_sources")
+TAXO_DIR   = os.path.join(PARENT_DIR, "taxonomy")
+
 OUT = {
-    "prc_raw"       : os.path.join(BASE_DIR, "prc4291_raw.txt"),
-    "prc_json"      : os.path.join(BASE_DIR, "prc4291_sections.json"),
-    "ibhs_json"     : os.path.join(BASE_DIR, "ibhs_requirements.json"),
-    "taxo_json"     : os.path.join(BASE_DIR, "lab_taxonomy.json"),
-    "detect_xlsx"   : os.path.join(BASE_DIR, "aerial_detectability_partition.xlsx"),
-    "edge_xlsx"     : os.path.join(BASE_DIR, "knowledge_graph_edge_coverage.xlsx"),
-    "graphml"       : os.path.join(BASE_DIR, "knowledge_graph.graphml"),
-    "nodes_json"    : os.path.join(BASE_DIR, "knowledge_graph_nodes.json"),
-    "edges_json"    : os.path.join(BASE_DIR, "knowledge_graph_edges.json"),
-    "rag_lookup"    : os.path.join(BASE_DIR, "graph_rag_lookup.py"),
-    "static_png"    : os.path.join(BASE_DIR, "knowledge_graph_static.png"),
-    "interactive"   : os.path.join(BASE_DIR, "knowledge_graph_interactive.html"),
-    "validation"    : os.path.join(BASE_DIR, "graph_validation_report.txt"),
+    "prc_raw"       : os.path.join(REG_DIR,   "prc4291_raw.txt"),
+    "prc_json"      : os.path.join(REG_DIR,   "prc4291_sections.json"),
+    "ibhs_json"     : os.path.join(REG_DIR,   "ibhs_requirements.json"),
+    "taxo_json"     : os.path.join(TAXO_DIR,  "lab_taxonomy.json"),
+    "detect_xlsx"   : os.path.join(TAXO_DIR,  "aerial_detectability_partition.xlsx"),
+    "edge_xlsx"     : os.path.join(BASE_DIR,  "edge_coverage.xlsx"),
+    "graphml"       : os.path.join(BASE_DIR,  "graph.graphml"),
+    "nodes_json"    : os.path.join(BASE_DIR,  "nodes.json"),
+    "edges_json"    : os.path.join(BASE_DIR,  "edges.json"),
+    "rag_lookup"    : os.path.join(BASE_DIR,  "graph_rag_lookup.py"),
+    "static_png"    : os.path.join(BASE_DIR,  "graph_static.png"),
+    "interactive"   : os.path.join(BASE_DIR,  "graph_interactive.html"),
+    "validation"    : os.path.join(BASE_DIR,  "validation_report.txt"),
 }
 
 print("=" * 70)

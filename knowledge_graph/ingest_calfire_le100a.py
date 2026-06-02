@@ -37,24 +37,27 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from pyvis.network import Network
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR  = os.path.dirname(os.path.abspath(__file__))
+PARENT_DIR = os.path.dirname(BASE_DIR)
+REG_DIR   = os.path.join(PARENT_DIR, "regulatory_sources")
+TAXO_DIR  = os.path.join(PARENT_DIR, "taxonomy")
 
 IN = {
-    "nodes_json" : os.path.join(BASE_DIR, "knowledge_graph_nodes.json"),
-    "edges_json" : os.path.join(BASE_DIR, "knowledge_graph_edges.json"),
-    "graphml"    : os.path.join(BASE_DIR, "knowledge_graph.graphml"),
+    "nodes_json" : os.path.join(BASE_DIR, "nodes.json"),
+    "edges_json" : os.path.join(BASE_DIR, "edges.json"),
+    "graphml"    : os.path.join(BASE_DIR, "graph.graphml"),
 }
 
 OUT = {
-    "calfire_json"  : os.path.join(BASE_DIR, "calfire_le100a_requirements.json"),
-    "nodes_json"    : os.path.join(BASE_DIR, "knowledge_graph_nodes.json"),
-    "edges_json"    : os.path.join(BASE_DIR, "knowledge_graph_edges.json"),
-    "graphml"       : os.path.join(BASE_DIR, "knowledge_graph.graphml"),
-    "static_png"    : os.path.join(BASE_DIR, "knowledge_graph_static.png"),
-    "interactive"   : os.path.join(BASE_DIR, "knowledge_graph_interactive.html"),
-    "edge_xlsx"     : os.path.join(BASE_DIR, "knowledge_graph_edge_coverage.xlsx"),
-    "detect_xlsx"   : os.path.join(BASE_DIR, "aerial_detectability_partition.xlsx"),
-    "validation"    : os.path.join(BASE_DIR, "graph_validation_report.txt"),
+    "calfire_json"  : os.path.join(REG_DIR,  "calfire_le100a_requirements.json"),
+    "nodes_json"    : os.path.join(BASE_DIR, "nodes.json"),
+    "edges_json"    : os.path.join(BASE_DIR, "edges.json"),
+    "graphml"       : os.path.join(BASE_DIR, "graph.graphml"),
+    "static_png"    : os.path.join(BASE_DIR, "graph_static.png"),
+    "interactive"   : os.path.join(BASE_DIR, "graph_interactive.html"),
+    "edge_xlsx"     : os.path.join(BASE_DIR, "edge_coverage.xlsx"),
+    "detect_xlsx"   : os.path.join(TAXO_DIR, "aerial_detectability_partition.xlsx"),
+    "validation"    : os.path.join(BASE_DIR, "validation_report.txt"),
 }
 
 print("=" * 70)

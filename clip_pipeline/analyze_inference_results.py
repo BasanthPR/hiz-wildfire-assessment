@@ -18,7 +18,7 @@ Key analyses
 
 Run
 ---
-  /opt/miniconda3/bin/python3 analyze_inference_results.py
+  python3 clip_pipeline/analyze_inference_results.py
 """
 
 import json, os, sys
@@ -26,7 +26,10 @@ import pandas as pd
 import numpy as np
 from collections import defaultdict
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR  = os.path.dirname(os.path.abspath(__file__))
+REPO_DIR  = os.path.dirname(BASE_DIR)
+KG_DIR    = os.path.join(REPO_DIR, "knowledge_graph")
+sys.path.insert(0, KG_DIR)
 sys.path.insert(0, BASE_DIR)
 from graph_rag_lookup import get_regulatory_context
 from vlm_inference_pipeline import OBJECT_CLASSES

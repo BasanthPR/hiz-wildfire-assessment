@@ -11,7 +11,7 @@ Inputs
 ------
   Drone orthomosaics         ~/hiz_data/henri/
   CLIP model                 openai/clip-vit-large-patch14-336 (HF cache)
-  Graph-RAG lookup           AI for HIZ/graph_rag_lookup.py
+  Graph-RAG lookup           knowledge_graph/graph_rag_lookup.py
 
 Processing per parcel
 ---------------------
@@ -48,16 +48,15 @@ Privacy
 -------
   Drone orthomosaic data is LOCAL INFERENCE ONLY. No images sent to external APIs.
 
-Outputs (all in AI for HIZ/)
------------------------------
+Outputs (all written to the clip_pipeline/ directory)
+------------------------------------------------------
   vlm_inference_results.json     — full per-chip records
   vlm_inference_summary.xlsx     — per-parcel, per-chip, compliance findings
   vlm_inference_log.txt          — progress + timing log
 
 Run
 ---
-  cd ~/Documents/HIZ/AI\ for\ HIZ
-  python3 vlm_inference_pipeline.py [--parcels N] [--resume]
+  python3 clip_pipeline/vlm_inference_pipeline.py [--parcels N] [--resume]
 """
 
 import os
@@ -78,11 +77,13 @@ import torch
 from transformers import CLIPModel, CLIPProcessor
 
 # ── Path setup ────────────────────────────────────────────────────────────────
-BASE_DIR  = os.path.dirname(os.path.abspath(__file__))
-HENRI_DIR = str(Path.home() / "hiz_data" / "henri")
+BASE_DIR   = os.path.dirname(os.path.abspath(__file__))
+REPO_DIR   = os.path.dirname(BASE_DIR)
+KG_DIR     = os.path.join(REPO_DIR, "knowledge_graph")
+HENRI_DIR  = str(Path.home() / "hiz_data" / "henri")
 CLIP_MODEL_ID = "openai/clip-vit-large-patch14-336"
 
-sys.path.insert(0, BASE_DIR)
+sys.path.insert(0, KG_DIR)
 from graph_rag_lookup import get_regulatory_context
 
 # ── Output paths ──────────────────────────────────────────────────────────────

@@ -11,8 +11,8 @@ Usage:
 import json, os
 
 _BASE = os.path.dirname(os.path.abspath(__file__))
-_NODES_F = os.path.join(_BASE, "knowledge_graph_nodes.json")
-_EDGES_F = os.path.join(_BASE, "knowledge_graph_edges.json")
+_NODES_F = os.path.join(_BASE, "nodes.json")
+_EDGES_F = os.path.join(_BASE, "edges.json")
 
 _nodes, _edges = None, None
 

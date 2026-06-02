@@ -20,15 +20,17 @@ Three regulatory instruments define specific compliance requirements across thes
 
 ### System Components
 
-The repository is organized into two top-level components, each with its own detailed documentation.
+The repository is organized into five top-level directories plus an autoregressive inference subdirectory.
 
-**Root directory: Knowledge graph construction and CLIP zero-shot pipeline**
+**`knowledge_graph/`** — Graph construction scripts, serialized graph artifacts (nodes, edges, GraphML), and the Graph-RAG lookup API. This is the regulatory backbone shared by both inference pipelines.
 
-The root-level scripts build a directed knowledge graph (346 nodes, 9,603 edges) linking 33 residential object classes to their governing regulations and potential violation types, then run a CLIP ViT-L/14-336 zero-shot classification pipeline over 4-band drone ortho-mosaics to identify which objects are present in each zone and generate structured compliance findings.
+**`regulatory_sources/`** — Raw and parsed regulatory text: PRC 4291 statutory text, IBHS WFPH requirements, and CAL FIRE LE-100a inspection items. These are the inputs to the graph builder.
 
-**`hiz_pipeline/` subdirectory: Autoregressive VLM inference pipeline**
+**`taxonomy/`** — The 33-class residential object taxonomy and the aerial-detectability partition table that establishes the theoretical ceiling for drone-based inspection.
 
-The `hiz_pipeline/` scripts implement a Geo-CoT (geographic chain-of-thought) prompting framework for autoregressive VLMs (Qwen2.5-VL-7B-Instruct, InternVL2-8B, GeoChat-7B), include a Graph-RAG retrieval step that injects zone-specific regulatory text into the system prompt, and provide ablation infrastructure for comparing the Graph-RAG condition against a plain-prompt baseline. A scalability extension applies the same pipeline to freely available NAIP 60 cm public aerial imagery.
+**`clip_pipeline/`** — CLIP ViT-L/14-336 zero-shot classification pipeline: parcel preprocessing, inference loop, OWLv2 pre-annotation for ground-truth creation, and manuscript analysis scripts.
+
+**`hiz_pipeline/`** — Autoregressive VLM inference pipeline: Geo-CoT prompting, Graph-RAG context injection, multi-model inference (Qwen2.5-VL-7B-Instruct, InternVL2-8B, GeoChat-7B), ablation infrastructure, and NAIP public imagery extension.
 
 
 ## Study Sites
@@ -48,67 +50,71 @@ Five WUI communities in California, covering a range of fire history, climate re
 
 ```
 .
-├── README.md                          # This file — project-level overview
+├── README.md                              # Project-level overview (this file)
+├── requirements.txt                       # Python dependencies (CLIP pipeline)
 │
-├── build_knowledge_graph.py           # Knowledge graph construction (Steps 1-10)
-├── ingest_calfire_le100a.py           # CAL FIRE LE-100a incremental ingestion
-├── graph_rag_lookup.py                # Graph-RAG query API
-├── vlm_inference_pipeline.py          # CLIP zero-shot inference loop (33 classes)
-├── clip_tahoe_parcels.py              # Tahoe parcel clipping preprocessor
-├── preannotate_groundtruth.py         # OWLv2 pre-annotation for Label Studio
-├── analyze_inference_results.py       # Manuscript analysis of CLIP inference output
-├── launch_labelstudio.py              # Label Studio session launcher
+├── knowledge_graph/                       # Regulatory knowledge graph
+│   ├── build_knowledge_graph.py           # Full graph construction pipeline
+│   ├── ingest_calfire_le100a.py           # CAL FIRE LE-100a incremental ingestion
+│   ├── graph_rag_lookup.py                # Graph-RAG query API
+│   ├── nodes.json                         # Serialized graph nodes (346 nodes)
+│   ├── edges.json                         # Serialized graph edges (9,603 edges)
+│   ├── graph.graphml                      # GraphML export for Gephi / Cytoscape
+│   ├── graph_static.png                   # Static visualization
+│   ├── graph_interactive.html             # Interactive PyVis visualization
+│   ├── edge_coverage.xlsx                 # Object × regulation coverage table
+│   ├── validation_report.txt              # Node/edge count and gap report
+│   └── explanation.txt                    # Narrative explanation of graph structure
 │
-├── knowledge_graph_nodes.json         # Serialized graph nodes (346 nodes)
-├── knowledge_graph_edges.json         # Serialized graph edges (9,603 edges)
-├── knowledge_graph.graphml            # GraphML export for Gephi / Cytoscape
-├── knowledge_graph_static.png         # Static visualization
-├── knowledge_graph_interactive.html   # Interactive PyVis visualization
-├── knowledge_graph_edge_coverage.xlsx # Object x regulation coverage table
+├── regulatory_sources/                    # Raw and parsed regulatory text
+│   ├── prc4291_raw.txt                    # PRC 4291 full statutory text
+│   ├── prc4291_sections.json              # PRC 4291 parsed sub-sections
+│   ├── ibhs_requirements.json             # IBHS Wildfire Prepared Home requirements
+│   └── calfire_le100a_requirements.json   # CAL FIRE LE-100a inspection items
 │
-├── calfire_le100a_requirements.json   # CAL FIRE LE-100a inspection items
-├── ibhs_requirements.json             # IBHS Wildfire Prepared Home requirements
-├── prc4291_sections.json              # PRC 4291 parsed sub-sections
-├── prc4291_raw.txt                    # PRC 4291 full statutory text
-├── lab_taxonomy.json                  # 33-class object taxonomy with aliases
-├── aerial_detectability_partition.xlsx # Aerial vs. ground-only requirement split
+├── taxonomy/                              # Object taxonomy and detectability
+│   ├── lab_taxonomy.json                  # 33-class object taxonomy with aliases
+│   └── aerial_detectability_partition.xlsx # Aerial vs. ground-only requirement split
 │
-├── graph_validation_report.txt        # Validation report (node/edge counts, gaps)
-├── knowledge_graph_explanation.txt    # Narrative explanation of the graph structure
+├── clip_pipeline/                         # CLIP zero-shot inference pipeline
+│   ├── vlm_inference_pipeline.py          # CLIP inference loop (33 classes)
+│   ├── clip_tahoe_parcels.py              # Tahoe Donner parcel preprocessor
+│   ├── preannotate_groundtruth.py         # OWLv2 pre-annotation for Label Studio
+│   ├── analyze_inference_results.py       # Manuscript analysis of inference output
+│   └── launch_labelstudio.py             # Label Studio session launcher
 │
-├── lib/                               # Third-party JS (vis.js, tom-select)
-├── requirements.txt                   # Python dependencies
+├── lib/                                   # Third-party JS (vis.js, tom-select)
 │
-└── hiz_pipeline/                      # Autoregressive VLM inference pipeline
-    ├── README.md                      # hiz_pipeline component documentation
-    ├── preprocess.py                  # Tile drone orthos, build manifest
-    ├── preprocess_naip.py             # Tile NAIP public imagery
-    ├── preprocess_naip_sr.py          # Tile NAIP super-resolution imagery
-    ├── download_public_imagery.py     # Fetch NAIP tiles from Planetary Computer
-    ├── filter_tiles.py                # Filter manifest to information-rich tiles
-    ├── prompts.py                     # Geo-CoT prompt builder, self-consistency voter
-    ├── run_qwen25vl.py                # Qwen2.5-VL-7B-Instruct inference
-    ├── run_qwen25vl_parallel.py       # Parallel shard runner
-    ├── run_qwen25vl_naip.py           # Qwen2.5-VL on NAIP imagery
-    ├── run_qwen25vl_naip_sr.py        # Qwen2.5-VL on NAIP super-resolution
-    ├── run_geochat.py                 # GeoChat-7B inference
-    ├── run_internvl.py                # InternVL2-8B inference
-    ├── run_naip_ollama.py             # Ollama-based local LLM on NAIP
-    ├── run_ablation.py                # Ablation: plain-prompt (no Graph-RAG)
-    ├── run_ablation_ollama.py         # Ablation via Ollama runner
-    ├── aggregate_parallel_results.py  # Merge parallel inference shards
-    ├── aggregate_naip_results.py      # Merge NAIP inference results
-    ├── annotate.py                    # Overlay bounding boxes on tile PNGs
-    ├── evaluate.py                    # Generate results report
-    ├── run_full_pipeline.sh           # Master sequential runner
-    ├── setup_env.sh                   # One-time environment setup
-    ├── knowledge_graph/               # Focused regulatory graph (5-class)
+└── hiz_pipeline/                          # Autoregressive VLM inference pipeline
+    ├── README.md                          # Component documentation
+    ├── preprocess.py                      # Tile drone orthos, build manifest
+    ├── preprocess_naip.py                 # Tile NAIP public imagery
+    ├── preprocess_naip_sr.py              # Tile NAIP super-resolution imagery
+    ├── download_public_imagery.py         # Fetch NAIP tiles from Planetary Computer
+    ├── filter_tiles.py                    # Filter manifest to information-rich tiles
+    ├── prompts.py                         # Geo-CoT prompt builder, self-consistency voter
+    ├── run_qwen25vl.py                    # Qwen2.5-VL-7B-Instruct inference
+    ├── run_qwen25vl_parallel.py           # Parallel shard runner
+    ├── run_qwen25vl_naip.py               # Qwen2.5-VL on NAIP imagery
+    ├── run_qwen25vl_naip_sr.py            # Qwen2.5-VL on NAIP super-resolution
+    ├── run_geochat.py                     # GeoChat-7B inference
+    ├── run_internvl.py                    # InternVL2-8B inference
+    ├── run_naip_ollama.py                 # Ollama-based local LLM on NAIP
+    ├── run_ablation.py                    # Ablation: plain-prompt (no Graph-RAG)
+    ├── run_ablation_ollama.py             # Ablation via Ollama runner
+    ├── aggregate_parallel_results.py      # Merge parallel inference shards
+    ├── aggregate_naip_results.py          # Merge NAIP inference results
+    ├── annotate.py                        # Overlay bounding boxes on tile PNGs
+    ├── evaluate.py                        # Generate results report
+    ├── run_full_pipeline.sh               # Master sequential runner
+    ├── setup_env.sh                       # One-time environment setup
+    ├── knowledge_graph/                   # Focused regulatory graph (5-class)
     │   ├── build_graph.py
     │   ├── graph_rag_lookup.py
     │   └── hiz_graph.graphml
     └── results/
-        ├── RESULTS_REPORT.md          # Generated results report (all models)
-        └── results_summary.json       # Aggregate statistics
+        ├── RESULTS_REPORT.md              # Generated results report (all models)
+        └── results_summary.json           # Aggregate statistics
 ```
 
 
@@ -173,21 +179,21 @@ The following are not committed because they constitute private research data, c
 ```bash
 conda create -n hiz python=3.13 && conda activate hiz
 pip install -r requirements.txt
-python build_knowledge_graph.py
-python ingest_calfire_le100a.py
-python vlm_inference_pipeline.py
+python knowledge_graph/build_knowledge_graph.py
+python knowledge_graph/ingest_calfire_le100a.py
+python clip_pipeline/vlm_inference_pipeline.py
 ```
 
 ### Autoregressive VLM Pipeline
 
 ```bash
-bash ~/hiz_pipeline/setup_env.sh
+bash hiz_pipeline/setup_env.sh
 source ~/hiz_venv/bin/activate
-bash ~/hiz_pipeline/run_full_pipeline.sh
+bash hiz_pipeline/run_full_pipeline.sh
 ```
 
 Full setup and usage instructions for each component are in:
-- Root `requirements.txt` and the detailed inline README below
+- `requirements.txt` and the detailed documentation below
 - `hiz_pipeline/README.md` for the VLM inference pipeline
 
 ---
@@ -196,7 +202,7 @@ Full setup and usage instructions for each component are in:
 
 ### Knowledge Graph Construction
 
-`build_knowledge_graph.py` constructs a directed NetworkX knowledge graph that encodes the regulatory landscape as a typed, attributed graph. The graph contains four node types:
+`knowledge_graph/build_knowledge_graph.py` constructs a directed NetworkX knowledge graph that encodes the regulatory landscape as a typed, attributed graph. The graph contains four node types:
 
 - **Object nodes** (33 classes): residential objects drawn from the lab taxonomy, including vegetation categories (live herb, live shrub, live tree, dead vegetation, mulch), combustible storage (woodpile, propane, garbage bin, BBQ grill, welcome mat, planters), vehicles and large equipment (car, RV, boat), structural elements (deck/patio, fence, storage shed, pergola/gazebo, ladder, play set), and miscellaneous items
 - **Zone nodes** (3): Zone_0, Zone_1, Zone_2, each carrying its distance range and descriptive label
@@ -205,11 +211,12 @@ Full setup and usage instructions for each component are in:
 
 Edges encode seven relation types: `typically_found_in`, `covered_by`, `governed_by`, `subject_to`, `can_cause`, `defines`, and `occurs_in`. Confidence scores on object-to-regulation edges are assigned by lexical matching (1.0 verbatim, 0.8 alias match, 0.6 generic fuel category, 0.4 floor).
 
-`ingest_calfire_le100a.py` extends the graph with 22 CAL FIRE LE-100a items and runs after the base build.
+`knowledge_graph/ingest_calfire_le100a.py` extends the graph with 22 CAL FIRE LE-100a items and runs after the base build.
 
 ### Graph-RAG Lookup
 
 ```python
+import sys; sys.path.insert(0, "knowledge_graph")
 from graph_rag_lookup import get_regulatory_context
 
 ctx = get_regulatory_context("propane", "Zone_0")
@@ -221,15 +228,15 @@ print(ctx["prc_sections"])   # matched PRC 4291 sub-sections
 ### CLIP Inference Pipeline
 
 ```bash
-python vlm_inference_pipeline.py                     # run on all parcels
-python vlm_inference_pipeline.py --parcels 10        # limit to first 10
-python vlm_inference_pipeline.py --threshold 0.30    # adjust detection threshold
+python clip_pipeline/vlm_inference_pipeline.py                     # run on all parcels
+python clip_pipeline/vlm_inference_pipeline.py --parcels 10        # limit to first 10
+python clip_pipeline/vlm_inference_pipeline.py --threshold 0.30    # adjust detection threshold
 ```
 
 ### OWLv2 Pre-Annotation for Ground Truth
 
 ```bash
-python preannotate_groundtruth.py --parcels 10 --threshold 0.12
+python clip_pipeline/preannotate_groundtruth.py --parcels 10 --threshold 0.12
 ```
 
 Produces PNG chips and COCO JSON files under `preannotations/` for import into Label Studio.
@@ -237,7 +244,7 @@ Produces PNG chips and COCO JSON files under `preannotations/` for import into L
 ### Results Analysis
 
 ```bash
-python analyze_inference_results.py
+python clip_pipeline/analyze_inference_results.py
 ```
 
 Writes `vlm_inference_analysis.txt` and `vlm_inference_figures.xlsx` with manuscript-ready tables.
