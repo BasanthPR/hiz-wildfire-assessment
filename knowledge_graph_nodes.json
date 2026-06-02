@@ -1,0 +1,3281 @@
+[
+  {
+    "id": "Zone_0",
+    "type": "zone",
+    "distance_range": "0-5ft",
+    "description": "Immediate Zone \u2014 noncombustible material only"
+  },
+  {
+    "id": "Zone_1",
+    "type": "zone",
+    "distance_range": "5-30ft",
+    "description": "Intermediate Zone \u2014 defensible space"
+  },
+  {
+    "id": "Zone_2",
+    "type": "zone",
+    "distance_range": "30-100ft",
+    "description": "Extended Zone \u2014 fire spread reduction"
+  },
+  {
+    "id": "woodpile",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_1",
+    "size_ft": "2-4ft",
+    "aliases": "firewood, wood pile, wood stack"
+  },
+  {
+    "id": "furniture",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_0",
+    "size_ft": "1-3ft",
+    "aliases": "patio furniture, chair, chair cushion"
+  },
+  {
+    "id": "car",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_1",
+    "size_ft": "6-15ft",
+    "aliases": "vehicle, automobile, parked car"
+  },
+  {
+    "id": "rv",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_2",
+    "size_ft": "10-30ft",
+    "aliases": "recreational vehicle, trailer, camper"
+  },
+  {
+    "id": "above_ground_pool_or_hot_tub",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_1",
+    "size_ft": "4-8ft",
+    "aliases": "hot tub, spa, jacuzzi, above ground pool"
+  },
+  {
+    "id": "play_set",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_1",
+    "size_ft": "6-12ft",
+    "aliases": "playset, kids toy, swing set, jungle gym"
+  },
+  {
+    "id": "pergola_gazebo",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_1",
+    "size_ft": "8-20ft",
+    "aliases": "pergola, gazebo, overhead structure, carport"
+  },
+  {
+    "id": "garbage_bin",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_0",
+    "size_ft": "2-4ft",
+    "aliases": "trash bin, recycle bin, trash can, garbage can, waste bin"
+  },
+  {
+    "id": "boat",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_2",
+    "size_ft": "8-20ft",
+    "aliases": "watercraft, kayak, canoe"
+  },
+  {
+    "id": "propane",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_0",
+    "size_ft": "2-5ft",
+    "aliases": "propane tank, lpg, gas tank, liquified petroleum"
+  },
+  {
+    "id": "storage_shed",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_1",
+    "size_ft": "6-15ft",
+    "aliases": "shed, outbuilding, adu, accessory structure, greenhouse"
+  },
+  {
+    "id": "clutter",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_0",
+    "size_ft": "1-5ft",
+    "aliases": "miscellaneous items, junk, debris pile"
+  },
+  {
+    "id": "planters",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_0",
+    "size_ft": "1-3ft",
+    "aliases": "potted plant, planter box, flower pot"
+  },
+  {
+    "id": "fuel_breaks",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "ALL",
+    "size_ft": "varies",
+    "aliases": "firebreak, fuel break zone"
+  },
+  {
+    "id": "irrigation",
+    "type": "object",
+    "aerial_visible": false,
+    "typical_zone": "ALL",
+    "size_ft": "small",
+    "aliases": "sprinkler, drip line, irrigation system"
+  },
+  {
+    "id": "driveway",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_1",
+    "size_ft": "varies",
+    "aliases": "access road, parking area"
+  },
+  {
+    "id": "welcome_mat",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_0",
+    "size_ft": "<1ft",
+    "aliases": "door mat, entry mat"
+  },
+  {
+    "id": "address_sign",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_0",
+    "size_ft": "<1ft",
+    "aliases": "house number, street sign"
+  },
+  {
+    "id": "fuel_or_flame_wick",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_0",
+    "size_ft": "<2ft",
+    "aliases": "flame wick, tiki torch, firestarter"
+  },
+  {
+    "id": "hoses",
+    "type": "object",
+    "aerial_visible": false,
+    "typical_zone": "Zone_0",
+    "size_ft": "varies",
+    "aliases": "garden hose, water hose"
+  },
+  {
+    "id": "broom",
+    "type": "object",
+    "aerial_visible": false,
+    "typical_zone": "Zone_0",
+    "size_ft": "<1ft",
+    "aliases": "push broom, yard broom"
+  },
+  {
+    "id": "ladder",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_1",
+    "size_ft": "4-12ft",
+    "aliases": "step ladder, extension ladder, ladder"
+  },
+  {
+    "id": "portable_gas_pump",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_1",
+    "size_ft": "2-4ft",
+    "aliases": "gas pump, fuel pump, generator"
+  },
+  {
+    "id": "curtains",
+    "type": "object",
+    "aerial_visible": false,
+    "typical_zone": "ALL",
+    "size_ft": "varies",
+    "aliases": "window covering, drapes, blinds"
+  },
+  {
+    "id": "lights",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_1",
+    "size_ft": "small",
+    "aliases": "outdoor light, string light, flood light"
+  },
+  {
+    "id": "live_herb",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_0",
+    "size_ft": "<0.5ft",
+    "aliases": "herb, grass, ground cover, succulent, flower, weed"
+  },
+  {
+    "id": "live_shrub",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_1",
+    "size_ft": "0.5-6ft",
+    "aliases": "shrub, bush, chaparral"
+  },
+  {
+    "id": "live_tree",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_2",
+    "size_ft": ">6ft",
+    "aliases": "tree, tree crown"
+  },
+  {
+    "id": "dead_vegetation",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_0",
+    "size_ft": "varies",
+    "aliases": "dead veg, dead plant, dried grass, needles, leaves"
+  },
+  {
+    "id": "mulch",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_0",
+    "size_ft": "<0.5ft",
+    "aliases": "wood chip mulch, bark mulch, organic mulch"
+  },
+  {
+    "id": "deck_patio",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_0",
+    "size_ft": "4-20ft",
+    "aliases": "deck, patio, balcony, stairway, porch"
+  },
+  {
+    "id": "fence",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_1",
+    "size_ft": "3-6ft",
+    "aliases": "wood fence, fencing, gate"
+  },
+  {
+    "id": "bbq_grill",
+    "type": "object",
+    "aerial_visible": true,
+    "typical_zone": "Zone_0",
+    "size_ft": "2-4ft",
+    "aliases": "bbq, grill, barbecue, outdoor kitchen"
+  },
+  {
+    "id": "PRC_4291_A",
+    "type": "regulation",
+    "source": "PRC_4291",
+    "full_text": "A person who owns, leases, controls, operates, or maintains a building or structure in the state responsibility area shall at all times do all of the following: (1) (A) Maintain defensible space of 100 feet from each side and from the front and rear of the structure, but not beyond the property line, except as provided in subparagraph (B). The amount of fuel modification necessary shall consider the flammability of the structure as affected by building material, building standards, location, and",
+    "zone_scope": "Zone_0",
+    "requirement_type": "removal"
+  },
+  {
+    "id": "PRC_4291_B",
+    "type": "regulation",
+    "source": "PRC_4291",
+    "full_text": "A person is not required under this section to manage fuels on land if that person does not have the legal right to manage fuels, nor is a person required to enter upon or to alter property that is owned by any other person without the consent of the owner of the property.",
+    "zone_scope": "ALL",
+    "requirement_type": "structural"
+  },
+  {
+    "id": "PRC_4291_C",
+    "type": "regulation",
+    "source": "PRC_4291",
+    "full_text": "(1) Except as provided in Section 18930 of the Health and Safety Code, the State Fire Marshal may adopt regulations exempting a structure with an exterior constructed entirely of nonflammable materials, or, conditioned upon the contents and composition of the structure, the director may vary the requirements respecting the removing or clearing away of flammable vegetation or other combustible growth with respect to the area surrounding those structures. (2) An exemption or variance under paragra",
+    "zone_scope": "ALL",
+    "requirement_type": "removal"
+  },
+  {
+    "id": "PRC_4291_D",
+    "type": "regulation",
+    "source": "PRC_4291",
+    "full_text": "The State Fire Marshal may authorize the removal of vegetation that is not consistent with the standards of this section. The State Fire Marshal may prescribe a procedure for the removal of that vegetation and make the expense a lien upon the building, structure, or grounds, in the same manner that is applicable to a legislative body under Section 51186 of the Government Code.",
+    "zone_scope": "ALL",
+    "requirement_type": "structural"
+  },
+  {
+    "id": "PRC_4291_E",
+    "type": "regulation",
+    "source": "PRC_4291",
+    "full_text": "(1) The board, in consultation with the State Fire Marshal, shall develop, periodically update, and post on its internet website a guidance document on fuels management pursuant to this chapter. The guidance document shall include, but not be limited to, regionally appropriate vegetation management suggestions that preserve and restore native species that are fire resistant or drought tolerant, or both, minimize erosion, minimize water consumption, and permit trees near homes for shade, aestheti",
+    "zone_scope": "ALL",
+    "requirement_type": "removal"
+  },
+  {
+    "id": "PRC_4291_F",
+    "type": "regulation",
+    "source": "PRC_4291",
+    "full_text": "The State Fire Marshal shall do both of the following: (1) Recommend to the board the types of vegetation or fuel that are to be excluded from an ember-resistant zone based on the probability that vegetation and fuel will lead to ignition by ember of a structure as a part of the update to the guidance document pursuant to paragraph (2) of subdivision (e). (2) Make reasonable efforts to provide notice to affected residents describing the requirements added by the amendments to paragraph (1) of su",
+    "zone_scope": "ALL",
+    "requirement_type": "structural"
+  },
+  {
+    "id": "PRC_4291_G",
+    "type": "regulation",
+    "source": "PRC_4291",
+    "full_text": "(1) The requirement for an ember-resistant zone pursuant to paragraph (1) of subdivision (a) shall not take effect for new structures until the board updates the regulations, pursuant to paragraph (1) of subdivision (a), and the guidance document, pursuant to paragraph (2) of subdivision (e). (2) The requirement for an ember-resistant zone pursuant to paragraph (1) of subdivision (a) shall take effect for existing structures three years after the effective date for the new structures.",
+    "zone_scope": "ALL",
+    "requirement_type": "structural"
+  },
+  {
+    "id": "PRC_4291_H",
+    "type": "regulation",
+    "source": "PRC_4291",
+    "full_text": "The department shall not change defensible space inspection practices and forms or enforcement to implement the requirement for an ember-resistant zone until the State Fire Marshal makes a written finding, which the State Fire Marshal shall post on the department\u2019s internet website, that the Legislature has appropriated sufficient resources to do so.",
+    "zone_scope": "ALL",
+    "requirement_type": "structural"
+  },
+  {
+    "id": "PRC_4291_I",
+    "type": "regulation",
+    "source": "PRC_4291",
+    "full_text": "For purposes of this section, a structure for the purpose of an ember-resistant zone shall include any attached deck. This section does not limit the authority of the board or the department to require the removal of fuel or vegetation on top of or underneath a deck pursuant to this section.",
+    "zone_scope": "ALL",
+    "requirement_type": "structural"
+  },
+  {
+    "id": "PRC_4291_J",
+    "type": "regulation",
+    "source": "PRC_4291",
+    "full_text": "As used in this section, \u201cperson\u201d means a private individual, organization, partnership, limited liability company, or corporation. (Amended by Stats. 2025, Ch. 731, Sec. 3. (AB 1455) Effective October 13, 2025.) Next Disclaimer: These codes may not be the most recent version. California may have more current or accurate information. We make no warranties or guarantees about the accuracy, completeness, or adequacy of the information contained on this site or the information linked to on the stat",
+    "zone_scope": "ALL",
+    "requirement_type": "structural"
+  },
+  {
+    "id": "PRC_4291_1",
+    "type": "regulation",
+    "source": "PRC_4291",
+    "full_text": "(A) Maintain defensible space of 100 feet from each side and from the front and rear of the structure, but not beyond the property line, except as provided in subparagraph (B). The amount of fuel modification necessary shall consider the flammability of the structure as affected by building material, building standards, location, and type of vegetation. Fuels shall be maintained and spaced in a condition so that a wildfire would be unlikely to ignite the structure. This subparagraph does not app",
+    "zone_scope": "Zone_0",
+    "requirement_type": "removal"
+  },
+  {
+    "id": "PRC_4291_2",
+    "type": "regulation",
+    "source": "PRC_4291",
+    "full_text": "Remove that portion of a tree that extends within 10 feet of the outlet of a chimney or stovepipe.",
+    "zone_scope": "ALL",
+    "requirement_type": "removal"
+  },
+  {
+    "id": "PRC_4291_3",
+    "type": "regulation",
+    "source": "PRC_4291",
+    "full_text": "Maintain a tree, shrub, or other plant adjacent to or overhanging a building free of dead or dying wood.",
+    "zone_scope": "ALL",
+    "requirement_type": "maintenance"
+  },
+  {
+    "id": "PRC_4291_4",
+    "type": "regulation",
+    "source": "PRC_4291",
+    "full_text": "Maintain the roof of a structure free of leaves, needles, or other vegetative materials.",
+    "zone_scope": "ALL",
+    "requirement_type": "maintenance"
+  },
+  {
+    "id": "PRC_4291_5",
+    "type": "regulation",
+    "source": "PRC_4291",
+    "full_text": "Before constructing a new building or structure or rebuilding a building or structure damaged by a fire in an area subject to this section, the construction or rebuilding of which requires a building permit, the owner shall obtain a certification from the local building official that the dwelling or structure, as proposed to be built, complies with all applicable state and local building standards, including those described in subdivision (b) of Section 51189 of the Government Code, and shall pr",
+    "zone_scope": "ALL",
+    "requirement_type": "structural"
+  },
+  {
+    "id": "IBHS_ZA_001",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "2025 Wildfire Prepared Home Technical Standard",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_Z0_001",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Table of Contents 1 PROGRAM OVERVIEW ....................................................................................................................... 3 1.1 Designations .............................................................................................................................................................. 3 1.1.1 Designation Levels ......................................",
+    "aerial_detectable": false,
+    "severity": "CRITICAL",
+    "requirement_type": "material",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_ZA_002",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "The Wildfire Prepared Home\u2122 program provides homeowners with science-based actions to help protect their properties from wildfire. Developed by the Insurance Institute for Business & Home Safety (IBHS) and based on research from IBHS\u2019s Suburban Wildfire Adaptation Roadmaps, this program follows a systems-based, two-tiered approach to reducing parcel-level wildfire risk. A home earns a \u201cdesignation",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_003",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Prepared Home program. Applicants may use the How-To Prepare My Home Checklist to complete the wildfire mitigation work before applying. To apply, homeowners pay a nonrefundable application fee, submit eligibility photos for IBHS review, and verified documentation will be collected by a third-party evaluation company. Once all requirements are confirmed, IBHS issues a designation certificate for t",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_004",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Two designations are available. To earn a designation, a home shall meet all the requirements for the chosen designation level, as evaluated by an authorized third-party, and verified by IBHS. The Plus level builds upon the",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_005",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Base level requirements. See Figure 1.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_006",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Figure 1. Abbreviated List of Requirements",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_Z0_002",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Wildfire Prepared Home Base \u2013 Applicants for this level must meet criteria such as creating the 0\u20135 Foot",
+    "aerial_detectable": false,
+    "severity": "CRITICAL",
+    "requirement_type": "structural",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_Z0_003",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Noncombustible Zone, upgrading building features, and maintaining the defensible space surrounding the parcel to 30 feet. This is typically achieved when retrofitting existing homes.",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "material",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_ZA_007",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Wildfire Prepared Home Plus \u2013 This level includes additional protective measures beyond the Base level for key building features of the home, and it is easiest to achieve with newly constructed homes or those undergoing exterior renovations. 1.1.2 Designation Level Goals",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_008",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Wildfire Prepared Home is a designation program that reduces wildfire risks to homes through a system of mitigation actions at the parcel level, based on the latest science and research from the nonprofit Insurance Institute for Business & Home Safety (IBHS).",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_009",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Wildfire Prepared Home Base \u2013 Helps protect a home from embers by addressing vegetation and items on and around the home, breaking the pathway of connective fuels for fire to spread to the structure by embers. 2025 Wildfire Prepared Home\u2122 Technical Standard 3",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_010",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Wildfire Prepared Home Plus \u2013 Adds extra protection by using specific building materials to help defend against radiant heat and direct flames. 1.1.3 Designation Process and Timelines: Initial, Annual Reviews, and Designation",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_011",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Renewal and Expiration 1.1.3.1 Initial Designation",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_012",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Homes earn a Wildfire Prepared Home designation by meeting all wildfire mitigation requirements for their selected level in the program. The designation is valid for three years and remains in Active status by completing an Annual Review each of the first two years following the initial designation, leading up to the 3-year designation expiration.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_013",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Before applying, applicants can complete the required wildfire mitigation using the How-To Prepare My Home",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_014",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Checklist, based on the Technical Standard.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_015",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Visit the website at https://wildfireprepared.org and click \u201cApply Now.\u201d",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_016",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Pay the nonrefundable application fee.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_017",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Take and submit eligibility photos for IBHS review.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_018",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Once eligibility photos are approved, a third-party evaluation company will conduct an in-person evaluation to collect documentation that will be verified. Once all requirements are confirmed, IBHS will issue a Wildfire",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_019",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Prepared Home designation certificate for the home. 1.1.3.2 Annual Reviews",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_020",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "To remain in Active designation status and ensure continued maintenance compliance, homeowners must complete an Annual Review each of the first two years following their initial designation, leading up to the 3-year designation expiration. This process verifies that your property remains mitigated to reduce wildfire risk.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_021",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 When to Apply: To maintain Active status, designated properties must apply for the Annual Review during the 60-day period leading up to the Anniversary Date, as indicated on the most recent designation certificate. Submissions after the Anniversary Date will incur a late fee.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_022",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Application & Fee: Applicants must submit an Annual Review application, pay the nonrefundable Annual",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_023",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Review fee in effect at the time of submission, and provide photo documentation demonstrating maintenance compliance.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_024",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Active: If the Annual Review has been paid for by the Anniversary Date, the property will remain in",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_025",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Active status for 60 days following the Anniversary Date (Active 60-day grace period) to allow time to complete the Annual Review process.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_026",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Inactive: If the Annual Review has been paid for by the Anniversary Date but is not completed and approved by IBHS within the Active 60-day grace period, the application will become Inactive. Inactive applications will be automatically closed 60 days before either the second Annual Review Anniversary or Expiration Date listed on the most recent designation certificate, whichever comes first.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_027",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 When Is It Late? An Annual Review is considered late if submitted after the Anniversary Date listed on the most recent Wildfire Prepared Home designation certificate.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_028",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Application & Late Fee: Applicants must submit an Annual Review application, pay the nonrefundable",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_029",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Annual Review fee, as well as an additional late fee in effect at the time of submission. They must also provide photo documentation demonstrating maintenance compliance.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_030",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o If the Annual Review is paid for within the 60-day \u201cActive\u201d Grace Period following the Anniversary Date but is not completed and approved by IBHS within this timeframe, the application will automatically become Inactive.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_031",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o If the Annual Review is paid for after the 60-day \u201cActive\u201d Grace Period following the Anniversary Date, the property will remain Inactive until the application is approved by IBHS. Inactive applications will be 2025 Wildfire Prepared Home\u2122 Technical Standard 4 automatically closed 60 days before either the second Annual Review or the Expiration Date listed on the most recent designation certific",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_032",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Ongoing Maintenance Requirements for Annual Reviews",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_Z1_001",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Regular maintenance is required to ensure your home and defensible space continue to meet the designation standard to meaningfully reduce wildfire risk. Growing, fallen, or dead vegetation, as well as new structures, can increase ignition risk. Think of your Annual Review like a Red Flag Warning \u2013 take proactive maintenance measures to help protect your home. To stay compliant, complete all of the",
+    "aerial_detectable": false,
+    "severity": "HIGH",
+    "requirement_type": "clearance",
+    "zone": "Zone_1"
+  },
+  {
+    "id": "IBHS_ZA_033",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Keep gutters, downspouts, and the roof clear of debris.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_Z0_004",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Ensure the 0\u20135 Foot Noncombustible Zone is properly maintained.",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "material",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_Z1_002",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Ensure the 5-30 Foot Defensible Space is properly maintained.",
+    "aerial_detectable": false,
+    "severity": "HIGH",
+    "requirement_type": "clearance",
+    "zone": "Zone_1"
+  },
+  {
+    "id": "IBHS_ZA_034",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Regularly maintain all decks and porches.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_035",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Ensure any new additions or changes (e.g., fences, structures, decks, hot tubs, propane tanks) remain compliant.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_036",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Note: For specific maintenance requirements, see the appropriate sections in this Technical Standard. 1.1.3.3 Designation Renewal and Expiration",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_037",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "At the end of the 3-year designation period, a property\u2019s Wildfire Prepared Home designation will expire. To maintain an Active designation status, homeowners must complete the full designation process to verify continued compliance with the most current Technical Standard.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_038",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 When to Apply: To maintain an Active designation, homeowners must submit their application and complete the full process before the Expiration Date listed on the most recent designation certificate. Allow enough time to complete all required steps. If approved, the new certificate will align with the initial designation date and extend the designation for another 3 years.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_039",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 How to Apply: See Initial Designation requirements.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_040",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Expired Status: A Wildfire Prepared Home designation is considered Expired if the full re-designation process is not completed by the Expiration Date listed on the most recent designation certificate.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_041",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 How to Apply: Once expired, applicants must complete the full designation process as a new application, verifying compliance with the most current Technical Standard. The designation will remain Expired until IBHS approves the new application. See Initial Designation requirements. 1.1.4 Designation Eligibility",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_042",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Applicant \u2013 The applicant shall be the homeowner who is responsible for paying a nonrefundable application fee and submitting eligibility photos.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_Z0_005",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Eligibility Photo Requirements \u2013 The applicant will provide clear and adequate documentation to IBHS to qualify for an evaluation, as required by the program. This includes photos of all sides of the home, capturing key building features and the 0\u20135 Foot Noncombustible Zone. To qualify, all requirements for the desired designation level shall be met, including the 0\u20135 Foot Noncombustible Zone ar",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "material",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_ZA_043",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Qualifying Dwelling Types \u2013 The designation is available for a single-family detached home, a freestanding residential building occupied by one family, limited to three stories above grade. This also includes a detached single-family factory-built modular home on a permanent foundation that is designed, built, and sited to meet all local building code requirements.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_044",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Non-qualified Dwelling Types \u2013 Manufactured homes, townhomes, multifamily housing, and nonresidential buildings are not eligible for a Wildfire Prepared Home designation.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_045",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Applicable Locations \u2013 The home shall be in California or Oregon.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_046",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o The designation has strict no-exception requirements. Protected trees may disqualify some homes, and homeowners may need to work with neighbors and Homeowners Associations (HOAs) to meet the 0\u20135",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_Z0_006",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Foot Noncombustible Zone setback.",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "material",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_Z1_003",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Designations cannot be granted for homes under active construction. All home components and defensible space requirements shall be complete to receive designation. 2025 Wildfire Prepared Home\u2122 Technical Standard 5 1.2 Red Flag Warning and Extended Absence Preparedness",
+    "aerial_detectable": false,
+    "severity": "HIGH",
+    "requirement_type": "structural",
+    "zone": "Zone_1"
+  },
+  {
+    "id": "IBHS_ZA_047",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "To help protect your home during Red Flag Warning days and during extended absences, take the following maintenance steps:",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_Z0_007",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 0\u20135 Foot Noncombustible Zone \u2013 Clear all accumulated vegetative debris and combustible items from this critical area.",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "material",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_ZA_048",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Roof and Gutters \u2013 Ensure no vegetative debris, such as leaves or needles, is left on your roof or in gutters.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_049",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Combustible Items \u2013 Relocate combustible items indoors or at least 30 feet away from the home. Examples include small door mats, chair cushions, potted plants, trash and recycle bins, kids\u2019 toys, pet beds, pool accessories, decorations, and BBQ grills with a propane tank.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "removal",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_050",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Parked Items \u2013 Move vehicles, motorcycles, trailers, boats, campers, RVs, ATVs, and similar vehicles at least 30 feet away from the home. 2025 Wildfire Prepared Home\u2122 Technical Standard 6 2 BASE LEVEL DESIGNATION REQUIREMENTS",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_Z1_004",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "To achieve a Wildfire Prepared Home Base designation, a home shall meet all listed requirements for this level, including specific building features and maintaining 30 feet of defensible space or to the property line around the home. These requirements must be met and maintained to qualify and receive a designation certificate. 2.1 Building Feature Requirements for the Base Level 2.1.1 Roof Coveri",
+    "aerial_detectable": true,
+    "severity": "HIGH",
+    "requirement_type": "clearance",
+    "zone": "Zone_1"
+  },
+  {
+    "id": "IBHS_ZA_051",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 The roof covering material shall have a Class A rating when tested in accordance with ASTM E108 or UL 790. Class A rated roof covering types include, but are not limited to, fiberglass composition asphalt shingles, concrete and clay tiles, metal shingles or sheets, and slate.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_052",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Roof cover maintenance shall also meet all the following:",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_053",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Kept clear of vegetative debris.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_054",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Where provided, barrel tile or corrugated roof coverings shall include noncombustible bird stops at the eave ends to prevent the entry of embers and debris.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_055",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Note: Given the potential service life uncertainties of both ignition-resistant treatments and applied ignition-resistant coatings, the use of wood shake, wood shingle, or any wood roof covering material regardless of test rating are not permitted. 2.1.2 Gutters and Downspouts",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_056",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Where gutters and downspouts are provided, shall include all the following:",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_057",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Gutters and downspouts shall be made of noncombustible material (e.g., metal).",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_058",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Gutters and downspouts shall be maintained clear of vegetative debris. 2.1.3 Vents",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_059",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Ventilation openings, including for enclosed attics, gable ends, ridge ends, under eaves and cornices, enclosed eave soffit spaces, enclosed rafter spaces formed where ceilings are applied directly to the underside of roof rafters, underfloor ventilation, foundations, and crawl spaces, or for any other opening intended to permit ventilation, shall meet one of the following requirement options:",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_060",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Performance-based Option \u2013 Corrosion-resistant vents installed, conforming with the following ASTM E2886 test requirements for flame- and ember-resistance:",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_061",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o No flaming ignition of the cotton material during the Ember Intrusion Test.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_062",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o No flaming ignition during the Integrity Test portion of the Flame Intrusion Test.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_063",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Temperature of the unexposed side of the vent does not exceed 662\u00b0F.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_064",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Note: Joints around such vents shall be sealed with sealants in accordance with vent manufacturer installation instructions to avoid ember and flame intrusion through the joints.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_065",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Prescriptive Option \u2013 Vents shall be covered with a noncombustible, corrosion-resistant mesh with openings not to exceed 1/8-inch in diameter for ember-resistance.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_066",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Forced air vents (e.g., dryer and central vacuum) shall have a functional louver or flap in lieu of mesh.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_067",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Plumbing vents are excluded from this requirement. 2.1.4 6-inch Vertical Noncombustible Wall Covering Clearance",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_068",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "All exterior walls shall have at least 6-inches of noncombustible material (e.g., exposed concrete foundation, fiber- cement, brick or stone veneer, stucco, metal flashing) applied vertically on the base of the wall measured from the ground at grade and the nearest horizontal surface (e.g., decks and patios).",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_069",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Note: All combustible deck posts shall include the 6-inch Vertical Noncombustible Wall Covering Clearance requirement, see 2.1.5 and 2.1.6 below. 2025 Wildfire Prepared Home\u2122 Technical Standard 7 2.1.5 Attached Patios, Decks, and Overhead Structures (e.g., Covered Porches,",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_070",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Pergolas, Carports, and Gazebos)",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_071",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Attached patios and decks, including stairs and overhead structures, are considered part of the building footprint as illustrated in Figure 2 and shall meet all the following requirements: 2.1.5.1 Around the Structure \u2013",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_Z0_008",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "The structure shall have its own 0\u20135 Foot Noncombustible Zone, measured from the outermost posts (see 2.2.1 0\u20135",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "material",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_Z0_009",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Foot Noncombustible Zone for requirements).",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "material",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_ZA_072",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Exception: Noncombustible patio walking surface and completely noncombustible (e.g., metal) pergola. 2.1.5.2 Top of Walking Surfaces \u2013",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_073",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 All walking surfaces shall be clear of vegetative debris, planter boxes, and climbing vines.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "removal",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_074",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Woody vegetation, including plants, shrubs, bushes, and trees, are not permitted.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_075",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Exception: Up to 10 noncombustible potted plants (e.g., terra cotta or clay) are permitted, provided:",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_076",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Each plant, including the noncombustible pot, shall not exceed 36 inches in height and width.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_077",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Potted plants can be relocated indoors or at least 30 feet from the home during Red Flag Warnings or extended absences.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "removal",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_078",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Shall be noncombustible framed (e.g., cast iron, aluminum, or metal), including but not limited to hanging chairs, rocking/lounge chairs, swinging benches, picnic benches, tables and chairs, and sectional furniture with ottomans.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_079",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Exception: A small number of combustible items (e.g., chair cushions) that can be relocated indoors or 30 feet away on Red Flag Warning days or during extended absences are permitted.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "removal",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_080",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Shall be clear of combustible items including, but not limited to, sheds, saunas, storage containers, combustible privacy dividers, artificial turf, large area rugs, plastic covers, hanging lamps, window-mounted AC units, drapes, shade screens, plastic rain barrels, wine barrels, wood planters, and retractable shade screens without a noncombustible housing or replaced with noncombustible alterna",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "removal",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_081",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 A limited number of items including, but not limited to, door mats, string lights, TVs, speakers, bird feeders, ceiling fans, pet doors and beds, trash/recycle bins, kids\u2019 toys, pool accessories, decorations, garden hoses, and BBQ grills with propane tank and covers are permitted.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_082",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 All movable combustible items need to be relocated indoors or 30 feet away on Red Flag Warning days or during extended absences. 2.1.5.3 Additional Structures \u2013",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "removal",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_083",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Overhead Structures (e.g., covered porches, pergolas, carports, and gazebos)",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_084",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Roof Covering \u2013 Shall meet one of the following requirements:",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_085",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o A solid roof covering material with a Class A rating when tested in accordance with ASTM E108 or UL 790, or",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_086",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Constructed of combustible slats (e.g., pergola) that cover no more than 15% of the total surface area.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_087",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Setback \u2013 A detached combustible overhead structure (e.g., pergola and gazebo) on an attached deck shall be at least 10 feet from all exterior walls of the home. (see 2.2.3 Detached Accessory Dwelling Units and Accessory Structures for additional requirements).",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "spacing",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_088",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Exception: An overhead structure constructed entirely of noncombustible materials is permitted with no setback requirement.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_089",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Posts \u2013 Combustible posts shall have at least 6-inches of noncombustible wall covering material (e.g., fiber-cement, metal flashing, masonry veneer, or stucco) applied vertically on the base of the posts measured from the ground at grade and the nearest horizontal surface (e.g., decks and patios).",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_090",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Other \u2013 Shall be free of any vegetation, curtains, drapes, and shade screens.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_091",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Exception: Shade screens that retract into noncombustible housing are permitted. 2025 Wildfire Prepared Home\u2122 Technical Standard 8",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_Z0_010",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Carports and Garages \u2013 In addition to having at least 6-inches of vertical noncombustible wall covering material and the 0\u20135 Foot Noncombustible Zone under and around the structure, shall meet all of the following requirements:",
+    "aerial_detectable": false,
+    "severity": "CRITICAL",
+    "requirement_type": "material",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_ZA_092",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Shall not store combustible items.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "removal",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_093",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o An open carport with exposed combustible interior wall covering (e.g., wood), shall be enclosed.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_094",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Where provided, shall be at least 10 feet from the home's exterior walls and other large combustibles, and not under a combustible overhead structure (e.g., covered porch, pergola, or gazebo).",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "spacing",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_095",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Where provided, on a combustible surface (e.g., wood or composite deck), shall have noncombustible material under the hot tub and extending to 2 feet around all sides of the hot tub.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_Z0_011",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Where provided, on a noncombustible surface or patio, shall have the 0\u20135 Foot Noncombustible Zone around the hot tub.",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "material",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_ZA_096",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Outdoor Kitchens, Bars, and Built-ins \u2013",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_097",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Where provided, shall be constructed entirely of noncombustible materials.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_098",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o If attached to the home, shall have 6-inches of noncombustible material applied vertically on the wall (e.g., backsplash) measured above any horizontal surface of the kitchen, bar, and built-in. 2.1.5.4 Underneath an Elevated Deck \u2013",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_099",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Vegetation and Groundcover - Shall remove all vegetation and combustible groundcover (e.g., grass, weeds, plants, shrubs, bushes, trees, exposed weed cloth, wood and rubber mulch) to bare mineral soil.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "removal",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_100",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Note: Noncombustible hardscape materials (e.g., gravel, pavers, river rocks, decomposed granite, steppingstones, and concrete) are permitted.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_101",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 6-inch Vertical Noncombustible Clearance \u2013 Shall have at least 6-inches of noncombustible wall covering material (e.g., fiber-cement, metal flashing, masonry veneer, or stucco) applied vertically at the base of all posts, supporting walls, and stairs measured from the ground at grade.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_102",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Lattice and Mesh \u2013 Where provided, combustible lattice material (e.g., wood or plastic), shall be removed from at least the bottom 6-inches or replaced with noncombustible material (e.g., metal). Where noncombustible corrosion-resistant metal mesh is provided, the mesh shall be installed on the outside of the lattice.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "removal",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_103",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 No Storage \u2013 Shall have nothing stored underneath.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_104",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Exception: An open outdoor living area under the deck shall meet the same requirements (see \u201cTop of walking surfaces\u201d above).",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_105",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Additionally, decks with a walking surface of 4 feet or less above the ground, shall be enclosed with the following:",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_106",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o When measured from the walking surface to the ground, the underdeck area with this height or less shall be enclosed with noncombustible, corrosion-resistant mesh. The mesh openings shall not exceed 1/8-inch in diameter and shall fully enclose the outer edge of the deck from the walking surface to the ground. This enclosure is required to reduce debris accumulation and limit ember intrusion benea",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_Z0_012",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Where provided, detached decks and overhead structures within 30 feet of the home shall meet the same requirements as attached decks (see 2.1.5 Attached Patios, Decks, and Overhead Structures). 2025 Wildfire Prepared Home\u2122 Technical Standard 9 2.2 Defensible Space Requirements for the Base Level 2.2.1 0\u20135 Foot Noncombustible Zone \u2013 Area within 5 Feet of the Home and",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "material",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_Z1_005",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "The first five feet surrounding the home and its attachments (e.g., decks, patios, overhead structures, stairs) is the most critical area of defensible space. This zone shall be established and maintained as noncombustible.",
+    "aerial_detectable": true,
+    "severity": "HIGH",
+    "requirement_type": "material",
+    "zone": "Zone_1"
+  },
+  {
+    "id": "IBHS_Z0_013",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "The 0-5 Foot Noncombustible Zone is measured horizontally from the edge of the home\u2019s exterior walls and, if present, the outermost posts of a deck or overhead structure, extending outward to 5 feet (see Figure 2). This noncombustible area also extends vertically to the sky.",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "material",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_Z0_014",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "The 0\u20135 Foot Noncombustible Zone shall meet all the following requirements:",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "material",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_Z0_015",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Shall remove all vegetation (e.g., grass, artificial turf, weeds, flowers, succulents, cacti, plants, shrubs, bushes, and vegetative debris) within 5",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "removal",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_Z0_016",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Figure 2. The 0\u20135 Foot Noncombustible Zone feet to bare mineral soil.",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "material",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_Z0_017",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Shall remove all trees, limbs, branches, and vines that are within and that overhang the 0\u20135 Foot",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "removal",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_Z0_018",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Shall remove all combustible groundcover materials (e.g., wood and rubber mulch and exposed weed cloth) within 5 feet to bare mineral soil.",
+    "aerial_detectable": false,
+    "severity": "CRITICAL",
+    "requirement_type": "removal",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_ZA_107",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Note: Noncombustible hardscape materials (e.g., gravel, pavers, river rocks, decomposed granite, steppingstones, and concrete) are permitted.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_108",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Fencing and Retaining Walls \u2013",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_Z0_019",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Shall remove combustible fencing materials (e.g., wood and vinyl), posts, gates, and retaining walls within 5 feet or replace with noncombustible material.",
+    "aerial_detectable": false,
+    "severity": "CRITICAL",
+    "requirement_type": "removal",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_Z0_020",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Shall not store vehicles, motorcycles, trailers, boats, campers, RVs, ATVs, and similar vehicles within 5 feet. Relocate them at least 30 feet away on Red Flag Warning days or during extended absences.",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "removal",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_Z0_021",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Removal Requirement: Shall remove all combustible items within 5 feet including, but not limited to, drapes, hot tubs, outdoor kitchens, bars, built-ins, firewood, furniture, hanging lamps, window-mounted AC units, large area rugs, combustible privacy dividers, plastic rain barrels, wine barrels, wood planters, playsets, saunas, sheds, storage containers, shade screens, and retractable shade scr",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "removal",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_ZA_109",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Replacement Option: Certain combustible items (e.g., furniture) may be replaced with noncombustible- framed alternatives.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_110",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 A limited number of items including, but not limited to, door mats, string lights, TVs, speakers, bird feeders, pet doors and beds, trash/recycle bins, kids\u2019 toys, pool pumps and accessories, garden hoses, BBQ grills with propane tank and cover, HVAC units (e.g., compressor fans), plastic downspout extensions, retractable shade screens with noncombustible housing, solar panel battery enclosures,",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_111",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 All movable combustible items need to be relocated indoors or at least 30 feet away on Red Flag",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "removal",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_112",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Warning days or during extended absences.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_113",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Reference Sections for Other Items:",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_114",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o For large combustibles (e.g., hot tubs, outdoor kitchens, and built-ins), see section 2.1.5.3.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_115",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o For pergolas, see section 2.1.5.3. 2025 Wildfire Prepared Home\u2122 Technical Standard 10",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_Z1_006",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o For large structures (e.g., sheds, ADU units), see 2.2.3 for Base and 3.2.2 for Plus. 2.2.2 5\u201330 Foot Defensible Space Zone \u2013 Area Surrounding the Home and",
+    "aerial_detectable": true,
+    "severity": "HIGH",
+    "requirement_type": "structural",
+    "zone": "Zone_1"
+  },
+  {
+    "id": "IBHS_Z0_022",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "To slow fire spread and reduce flame intensity near the home, horizontal and vertical separation of vegetation, structures, and other connective fuels shall be created and maintained within 5 to 30 feet around the structure and its attachments or to the property line, whichever is closest. The 5\u201330 Foot Defensible Space Zone shall meet all the following requirements: 2.2.2.1 Vegetation",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "spacing",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_ZA_116",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Shall have tree limbs and branches pruned to a minimum height of 6 vertical feet above the ground or one-third the height of the tree if less than 18 feet tall.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_117",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Shall regularly prune tree branches to provide at least 10 feet of horizontal spacing between crowns of adjacent trees. Privacy rows of trees are not permitted.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "spacing",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_118",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Shall keep all branches a minimum of 10 feet away from chimney and stovepipe outlets.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_119",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Shrubs, bushes, and plants shall not be placed under larger trees.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_120",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Individual shrubs or shrubs clustered in small groupings or islands, shall have total foliage covering less than 10 feet in horizontal diameter and shall be treated as a single shrub.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_121",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Individual shrubs, bushes, and plants or groupings shall have a minimum horizontal spacing between other trees, shrubs, bushes, and plants of 2 times the height of the tallest plant (i.e., a 3-foot-tall shrub must have a 6-foot clearance surrounding it) with a maximum required horizontal spacing of 10 feet. Privacy hedges and rows of bushes are not permitted.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "spacing",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_122",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Shall cut down annual grasses to less than 4 inches in height.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_123",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Exception: Grass may be kept to less than 18 inches in height on slopes where necessary to stabilize the soil and prevent erosion.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_124",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Shall routinely remove dead and dying vegetation (e.g., grass, weeds, plants, shrubs, bushes, trees, logs, stumps, branches, leaves, and pine needles).",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "removal",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_125",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Shall place wood piles at least 30 feet away from the home unless the wood is stored in an accessory structure (see 2.2.3 Accessory Dwelling Units and Accessory Structures for Base Level requirements or 3.2.2 for Plus Level requirements). Fire-retardant tarps are not permitted. 2.2.2.2 Other items",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_126",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Liquid Propane Gas Storage Tanks and Fuel Tanks (e.g., diesel and kerosene) \u2013 Where provided, shall meet one of the following requirements:",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_127",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Shall be at least 30 feet from the home, or",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "spacing",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_128",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Shall be at least 10 feet from the home and have the following minimum clearance, and",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "spacing",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_129",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 0-10 feet \u2013 Shall have 10 feet of noncombustible clearance to bare mineral soil under and around the tank, including removal of vegetation, groundcover, fencing, and all combustible items.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_130",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Noncombustible hardscape materials (e.g., gravel, pavers, river rocks, decomposed granite, steppingstones, and concrete) are permitted.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_131",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Exception: Healthy, mature trees are permitted if limbed up to maintain at least 6 feet of clearance above the tank.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_132",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 10-20 feet \u2013 Shall extend clearance an additional 10 feet around their exterior. The additional 10 feet of clearance includes cutting annual grasses down to less than four inches in height; removing plants, shrubs, bushes, and small trees; and removing dead plants, shrubs, bushes, trees, limbs, branches, logs, and stumps.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_133",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Exception: Healthy, mature trees are permitted if limbed up to maintain at least 6 feet of clearance above the tank. 2025 Wildfire Prepared Home\u2122 Technical Standard 11",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "clearance",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_134",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Combustible Water Storage Tanks \u2013",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_135",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Where provided, shall be at least 5 feet from the home\u2019s exterior walls and other large combustibles and not under a combustible overhead structure (e.g., covered porch, pergola, or gazebo).",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "spacing",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_Z0_023",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Exception: Multiple water storage tanks within 5 feet of each other are permitted.",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "structural",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_Z0_024",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Shall have the 0\u20135 Foot Noncombustible Zone (e.g., bare dirt, gravel, concrete) underneath and surrounding the tank. 2.2.3 Detached Accessory Dwelling Units and Accessory Structures (within the 5-30",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "material",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_ZA_136",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 All Structures [e.g., Overhead Structures (e.g., Pergolas, Carports, Garages, Gazebos) Sheds,",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_137",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Greenhouses, Playsets, etc.] with a footprint greater than or equal to 15 square feet and within 30 feet of the home and attachments, where provided, shall meet all the following requirements:",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_138",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Structures shall be at least 10 feet from the home and attachments.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "spacing",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_Z0_025",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Structures shall meet the same wildfire resilience requirements for the home, such as roof covering, gutters and downspouts, vents, 6-inch vertical noncombustible wall covering clearance, decks, and the 0-5 Foot Noncombustible Zone surrounding them.",
+    "aerial_detectable": false,
+    "severity": "CRITICAL",
+    "requirement_type": "material",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_Z0_026",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Space multiple structures at least 10 feet apart from each other. Each structure\u2019s 0\u20135 Foot",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "structural",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_Z0_027",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Noncombustible Zone under and around the structure shall not overlap the 0\u20135 Foot Noncombustible",
+    "aerial_detectable": true,
+    "severity": "CRITICAL",
+    "requirement_type": "material",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_ZA_139",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Zone required for the home, decks, or other structures within 30 feet.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_140",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Shall have no more than 3 total ADUs and accessory structures within 30 feet.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_141",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Additionally, open detached carports and garages, where provided:",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_142",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Shall not store combustible items.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "removal",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_143",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 An open carport with exposed combustible interior wall covering (e.g., wood), shall be enclosed.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_144",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Note \u2013 Ongoing Research: As of publication of this standard, IBHS continues active research into the spacing required between structures to reduce the likelihood of structure-to-structure fire spread, including the impact of structural openings, building materials, and connective fuels. The provisions of this section of the standard may be updated as this research matures. 2025 Wildfire Prepared",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "spacing",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_145",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "To achieve a Wildfire Prepared Home Plus designation, a home shall first meet all the requirements of the Base level, except where the Plus level designation requirements are more restrictive. In addition, the home shall include additional building features and shall meet all of the following Plus requirements: 3.1 Building Features Requirements for the Plus Level 3.1.1 Gutters and Downspouts",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_146",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Where provided, in addition to having noncombustible material for gutters and downspouts as required for the",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_147",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Base level, gutters shall also be covered with a noncombustible material to prevent the accumulation of vegetative debris. 3.1.2 Eaves and Soffits",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_148",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "In addition to the vent opening requirement for eaves and soffits listed for the Base level requirements, eaves shall be enclosed or protected on the exposed underside using one of the following required options:",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_149",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Materials approved for not less than 1-hour fire-resistance-rating",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_150",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 2-inch nominal dimension lumber 3.1.3 Vents",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_151",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "In addition to having a functional louver or flap for forced air vents (e.g., dryer and central vacuum) as required for the Base level requirements, they shall also be made of noncombustible material (e.g., metal). 3.1.4 Exterior Wall Covering",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_152",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 In addition to having the bottom 6-inches of exterior walls made of noncombustible material as required for the Base level, all exterior wall covering shall be made of a noncombustible material (e.g., metal, fiber- cement, masonry veneer, stucco, brick, concrete).",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_153",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Where provided, all shutters (e.g., decorative and operable) shall be made of noncombustible material.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_154",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Note: Combustible and ignition-resistant wall cover material (e.g., wood shake, wood shingle, or any other wood siding material including ignition-resistant treatments and coatings) by construction or assembly are not permitted. 3.1.5 Exterior Glass (Windows, Skylights, and Glazed Openings within Doors)",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_155",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "All exterior windows, skylights, and glazed openings within doors shall comply with one of the following requirements:",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_156",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Multipaned glass with at least two tempered panes.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_157",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Glass with a minimum of 20-minutes fire-resistance rating when tested in accordance with NFPA 257.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_158",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Glass blocks (windows only).",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_159",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Operable skylights shall be protected by a noncombustible mesh screen where mesh openings shall not exceed 1/8-inch in diameter. 3.1.6 Exterior Doors",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_160",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "All exterior doors shall comply with one of the following requirements:",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_161",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Exterior doors shall be approved noncombustible construction, or solid-core wood not less than 1-\u00be inches thick (44 mm). The exterior doors shall be constructed with noncombustible threshold. Windows within doors and glazed doors shall be in accordance with this standard\u2019s exterior glass requirements (see 3.1.5 Exterior Glass).",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_162",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Exterior door assembly shall have a fire-resistance rating of not less than 20-minutes when tested according to NFPA 252.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_163",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Doors made of combustible material (e.g. non-solid core wood doors) are permissible provided a noncombustible exterior storm door is installed as the outermost door. 2025 Wildfire Prepared Home\u2122 Technical Standard 13 3.1.7 Decks and Stairs",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_164",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "In addition to the Base level requirements, decks shall meet one of the following required options:",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_165",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Option 1: New Construction - All deck components, including posts, joists, railings, stairs, and walking surfaces, shall be constructed with noncombustible materials.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_166",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Deck Walking Surfaces shall be constructed with a solid, noncombustible material (e.g., metal or light- weight concrete) with no gaps.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_Z0_028",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Deck Railings within 5 feet of the home shall be constructed with noncombustible material, including where they attach to the home.",
+    "aerial_detectable": false,
+    "severity": "CRITICAL",
+    "requirement_type": "material",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_ZA_167",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Deck posts shall have a minimum of 6-inches of noncombustible material (e.g., metal flashing or fiber- cement board) applied vertically to the base.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_168",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Stairs Attached to a Deck shall meet one the following requirements:",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_169",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Stairs Less than 4 Feet Wide and Open Underneath:",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_170",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o A minimum of 6-inches of noncombustible material (e.g., metal flashing or fiber-cement) shall be applied vertically at the exterior base, measured from the ground at grade.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_171",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Stair treads shall be a solid (no gaps) and made of noncombustible material (e.g., metal or lightweight concrete).",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_172",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Exception: If stairs are constructed with closed risers, they shall also be solid (no gaps) and made of noncombustible material.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_173",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o The area underneath shall be enclosed with noncombustible, corrosion-resistant mesh with openings not to exceed 1/ -inch in diameter. 8",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_174",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o A minimum of 6-inches of noncombustible material (e.g., metal flashing or fiber-cement) shall be applied vertically at the exterior base, measured from the ground at grade.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_Z0_029",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Stairs shall have closed risers. Stair treads and risers shall be a solid, and made of noncombustible material (e.g., metal or light-weight concrete) with no gaps. 3.2 Defensible Space Requirements for the Plus Level 3.2.1 Parallel Fences within 5 to 30 feet",
+    "aerial_detectable": false,
+    "severity": "CRITICAL",
+    "requirement_type": "material",
+    "zone": "Zone_0"
+  },
+  {
+    "id": "IBHS_ZA_175",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Back-to-back (parallel) combustible fencing (meaning separate fences that are combustible and closer than 5 feet apart) are not permitted.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_176",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Exception: If one or both back-to-back (parallel) fences are constructed with noncombustible materials (e.g., concrete or metal).",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_177",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Note: Meeting this requirement may necessitate coordination with neighbors or an HOA to eliminate at least one of the combustible parallel fences. 3.2.2 Detached Accessory Dwelling Units and Accessory Structures",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_178",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 All Detached Accessory Dwelling Units (ADUs) and Accessory Structures [e.g., Overhead Structures (e.g., Pergolas, Carports, Garages, Gazebos) Sheds, Greenhouses, Playsets, Etc.] with a footprint greater than or equal to 15 square feet shall be located a minimum of 30 feet away from the home and attachments.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_179",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Note: As of publication of this standard, IBHS continues active research into the spacing required between structures to reduce the likelihood of wind-driven building-to-building fire spread, including the impact of structural openings, building materials, and connective fuels. The provisions of this section of the standard may be updated as this research matures. 2025 Wildfire Prepared Home\u2122 Te",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "spacing",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_180",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Wildfire Prepared Home offers tools to assist homeowners, applicants, and other stakeholders achieve designations. Find them at wildfireprepared.org. 4.1 Applicant: How-To Prepare My Home Checklist",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_181",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "To meet the wildfire mitigation requirements for a designation, use the How-To Prepare My Home Checklist to ensure all the necessary steps for your chosen level are complete before applying. 4.2 IBHS Portal, Contact Information, and Status Updates",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_182",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "After creating an account, log in at wildfireprepared.org/portal to ask questions and check your application status. 4.3 Definitions",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_183",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Combustible \u2013 Materials that can ignite and burn.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_184",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Fire-Resistance-Rated Construction \u2013 The use of materials and systems in the design and construction of a building or structure to safeguard against the spread of fire within a building or structure and the spread of fire to or from buildings or structures to the wildland-urban interface area. Where this standard requires 1- hour fire-resistance-rated construction, the fire-resistance rating of ",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_185",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "o Exceptions: The fire-resistance rating of building elements, components, or assemblies based on:",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_186",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 The prescriptive designs prescribed in Section 721 of the International Building Code.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_187",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 The calculation procedures in accordance with Section 722 of the International Building Code.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_188",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Noncombustible \u2013 Made from material of which no part will ignite and burn when subjected to fire. Any material passing ASTM E136 shall be considered noncombustible.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_189",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Red Flag Warning \u2013 A Red Flag Warning is determined by local offices of the National Weather Service (NWS) and is specific to those local areas. A Red Flag Warning means warm temperatures, very low humidities, and strong winds are expected to combine to produce an increased risk of fire danger.",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_190",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Roof covering \u2013 The material applied to the roof deck to provide weather resistance, achieve fire classification, or enhance appearance.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_191",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Wall covering \u2013 An exterior wall material applied to provide a weather-resistant barrier, insulation, or aesthetic appeal.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_192",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Performance-based Option \u2013 A standard specifying desired outcomes by requiring compliance with a certain standard(s), without prescribing specific methods or materials.",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_193",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 Prescriptive Option\u2013 A standard that specifies exact methods or materials to achieve compliance, rather than focusing on desired outcomes. 4.4 List of Referenced Standards 4.4.1 ASTM",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_194",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 E84 \u2013 Standard Test Methods for Surface Burning Characteristics of Building Materials",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_195",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 E108 \u2013 Standard Test Methods for Fire Tests of Roof Coverings",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_196",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 E136 \u2013 Standard Test Method for Behavior of Materials in a Vertical Tube Furnace at 750\u00b0C",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_197",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 E2768 \u2013 Standard Test Method for Extended Duration Surface Burning Characteristics of Building Materials (30 min Tunnel Test)",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_198",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 E2886 \u2013 Standard Test Method for Evaluating the Ability of Exterior Vents to Resist the Entry of Embers and",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_199",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Direct Flame Impingement 4.4.2 NFPA",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_200",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 252 \u2013 Standard Methods of Fire Tests of Door Assemblies",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_201",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 257 \u2013 Standard on Fire Test for Windows and Glass Block Assemblies 4.4.3 UL",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_202",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 723 \u2013 Standard for Test for Surface Burning Characteristics of Building Materials",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "material",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_203",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 790 \u2013 Standard Test Methods for Fire Tests of Roof Coverings 4.4.4 ISO",
+    "aerial_detectable": false,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ZA_204",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "\u2022 17065 \u2013 Requirements for Bodies Certifying Products, Processes and Services 2025 Wildfire Prepared Home\u2122 Technical Standard 15",
+    "aerial_detectable": true,
+    "severity": "LOW",
+    "requirement_type": "structural",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_Z1_007",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Combustible water storage tanks shall be at least 5 feet from home exterior walls within the 5-30 foot zone.",
+    "aerial_detectable": true,
+    "severity": "HIGH",
+    "requirement_type": "spacing",
+    "zone": "Zone_1"
+  },
+  {
+    "id": "IBHS_Z1_008",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Remove all dead plant material within the 5-30 foot zone.",
+    "aerial_detectable": true,
+    "severity": "HIGH",
+    "requirement_type": "removal",
+    "zone": "Zone_1"
+  },
+  {
+    "id": "IBHS_Z1_009",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Vehicles and RVs parked or stored within 5-30 foot zone \u2014 maintain clearance from vegetation. No combustible materials stored around vehicle.",
+    "aerial_detectable": true,
+    "severity": "HIGH",
+    "requirement_type": "clearance",
+    "zone": "Zone_1"
+  },
+  {
+    "id": "IBHS_Z1_010",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Propane tanks must be at least 10 feet from home exterior walls and maintained free of combustible material.",
+    "aerial_detectable": true,
+    "severity": "HIGH",
+    "requirement_type": "spacing",
+    "zone": "Zone_1"
+  },
+  {
+    "id": "IBHS_Z2_001",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "30\u2013100 Foot Zone: manage vegetation to reduce fire spread potential by removing dead plant material and thinning vegetation.",
+    "aerial_detectable": true,
+    "severity": "MEDIUM",
+    "requirement_type": "clearance",
+    "zone": "Zone_2"
+  },
+  {
+    "id": "IBHS_Z2_002",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Trees within 30-100 feet shall have crown separation to prevent fire spread between canopies.",
+    "aerial_detectable": true,
+    "severity": "MEDIUM",
+    "requirement_type": "spacing",
+    "zone": "Zone_2"
+  },
+  {
+    "id": "IBHS_Z2_003",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Large combustibles (boats, RVs, trailers) stored in 30-100 ft zone should have clearance from vegetation.",
+    "aerial_detectable": true,
+    "severity": "MEDIUM",
+    "requirement_type": "clearance",
+    "zone": "Zone_2"
+  },
+  {
+    "id": "IBHS_ALL_001",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Red Flag Warning: relocate all combustible items (door mats, chair cushions, potted plants, trash/recycle bins, kids toys, BBQ grills with propane) indoors or at least 30 feet from home.",
+    "aerial_detectable": true,
+    "severity": "HIGH",
+    "requirement_type": "removal",
+    "zone": "ALL"
+  },
+  {
+    "id": "IBHS_ALL_002",
+    "type": "regulation",
+    "source": "IBHS_WFPH",
+    "full_text": "Annual maintenance: keep gutters, downspouts, and roof clear of vegetative debris year-round.",
+    "aerial_detectable": true,
+    "severity": "MEDIUM",
+    "requirement_type": "maintenance",
+    "zone": "ALL"
+  },
+  {
+    "id": "Combustible_within_Zone0",
+    "type": "violation",
+    "severity": "CRITICAL",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "Firewood_within_30ft",
+    "type": "violation",
+    "severity": "HIGH",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "Car_parked_in_Zone1",
+    "type": "violation",
+    "severity": "HIGH",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "Propane_within_5ft",
+    "type": "violation",
+    "severity": "CRITICAL",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "Debris_accumulation",
+    "type": "violation",
+    "severity": "HIGH",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "Vegetation_within_Zone0",
+    "type": "violation",
+    "severity": "CRITICAL",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "Combustible_fence_Zone0",
+    "type": "violation",
+    "severity": "CRITICAL",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "Shed_too_close_to_home",
+    "type": "violation",
+    "severity": "HIGH",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "HotTub_improper_placement",
+    "type": "violation",
+    "severity": "HIGH",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "Boat_RV_in_Zone2_near_veg",
+    "type": "violation",
+    "severity": "MEDIUM",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "Trash_bin_in_Zone0",
+    "type": "violation",
+    "severity": "CRITICAL",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "WelcomeMat_combustible_Zone0",
+    "type": "violation",
+    "severity": "CRITICAL",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "Ladder_stored_near_home",
+    "type": "violation",
+    "severity": "HIGH",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "PergolaShed_combustible",
+    "type": "violation",
+    "severity": "HIGH",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "Clutter_accumulation",
+    "type": "violation",
+    "severity": "HIGH",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "Dead_vegetation_present",
+    "type": "violation",
+    "severity": "HIGH",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "Vent_mesh_inadequate",
+    "type": "violation",
+    "severity": "CRITICAL",
+    "detection_method": "ground"
+  },
+  {
+    "id": "Roof_debris_present",
+    "type": "violation",
+    "severity": "HIGH",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "Gutter_not_cleared",
+    "type": "violation",
+    "severity": "HIGH",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "Tree_crown_overlap",
+    "type": "violation",
+    "severity": "MEDIUM",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "Mulch_within_Zone0",
+    "type": "violation",
+    "severity": "CRITICAL",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "BBQ_grill_in_Zone0",
+    "type": "violation",
+    "severity": "CRITICAL",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "Playset_within_30ft",
+    "type": "violation",
+    "severity": "HIGH",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "Furniture_left_in_Zone0",
+    "type": "violation",
+    "severity": "HIGH",
+    "detection_method": "aerial"
+  },
+  {
+    "id": "CALFIRE_Z1_A",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Remove all branches within 10 feet of any chimney or stovepipe outlet.",
+    "zone": "Zone_1",
+    "item_label": "A",
+    "requirement_type": "removal",
+    "severity": "HIGH",
+    "aerial_detectable": false
+  },
+  {
+    "id": "CALFIRE_Z1_B",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Remove leaves, needles or other vegetation on roofs, gutters, decks, porches, stairways, etc.",
+    "zone": "Zone_0",
+    "item_label": "B",
+    "requirement_type": "removal",
+    "severity": "CRITICAL",
+    "aerial_detectable": true
+  },
+  {
+    "id": "CALFIRE_Z1_C",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Remove dead tree or shrub branches that overhang roofs, below or adjacent to windows, or which are adjacent to wall surfaces.",
+    "zone": "Zone_1",
+    "item_label": "C",
+    "requirement_type": "removal",
+    "severity": "HIGH",
+    "aerial_detectable": true
+  },
+  {
+    "id": "CALFIRE_Z1_D",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Remove all dead and dying grass, plants, shrubs, trees, branches, leaves, weeds and needles.",
+    "zone": "Zone_1",
+    "item_label": "D",
+    "requirement_type": "removal",
+    "severity": "HIGH",
+    "aerial_detectable": true
+  },
+  {
+    "id": "CALFIRE_Z1_E",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Remove or separate fuels to maintain spacing between vegetation to interrupt fire's path. Prune limbs; separate plants and ground cover.",
+    "zone": "Zone_1",
+    "item_label": "E",
+    "requirement_type": "clearance",
+    "severity": "HIGH",
+    "aerial_detectable": true
+  },
+  {
+    "id": "CALFIRE_Z1_F",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Remove flammable vegetation and items that could catch fire which are adjacent to, or below, combustible decks, balconies, and stairs.",
+    "zone": "Zone_1",
+    "item_label": "F",
+    "requirement_type": "removal",
+    "severity": "HIGH",
+    "aerial_detectable": true
+  },
+  {
+    "id": "CALFIRE_Z1_G",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Relocate exposed wood piles outside of Zone 1 (30 ft) unless completely covered in a fire-resistant material.",
+    "zone": "Zone_1",
+    "item_label": "G",
+    "requirement_type": "spacing",
+    "severity": "HIGH",
+    "aerial_detectable": true
+  },
+  {
+    "id": "CALFIRE_Z2_H",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Cut annual grasses and forbs down to a maximum height of 4 inches.",
+    "zone": "Zone_2",
+    "item_label": "H",
+    "requirement_type": "clearance",
+    "severity": "MEDIUM",
+    "aerial_detectable": true
+  },
+  {
+    "id": "CALFIRE_Z2_I",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Remove fuels to create proper horizontal and vertical spacing among shrubs and trees, and remove lower tree limbs (ladder fuels).",
+    "zone": "Zone_2",
+    "item_label": "I",
+    "requirement_type": "clearance",
+    "severity": "MEDIUM",
+    "aerial_detectable": true
+  },
+  {
+    "id": "CALFIRE_Z2_J",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "All exposed wood piles must have a minimum of 10 feet clearance, down to bare mineral soil, in all directions.",
+    "zone": "Zone_2",
+    "item_label": "J",
+    "requirement_type": "spacing",
+    "severity": "MEDIUM",
+    "aerial_detectable": true
+  },
+  {
+    "id": "CALFIRE_Z2_K",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Remove all dead and dying trees, branches, shrubs, or other plants, and surface debris. Loose surface litter (fallen leaves, needles, twigs, bark, cones) shall be permitted to a depth of 3 inches.",
+    "zone": "Zone_2",
+    "item_label": "K",
+    "requirement_type": "removal",
+    "severity": "MEDIUM",
+    "aerial_detectable": true
+  },
+  {
+    "id": "CALFIRE_Z2_L",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Logs or stumps embedded in the soil must be removed or isolated from other vegetation.",
+    "zone": "Zone_2",
+    "item_label": "L",
+    "requirement_type": "removal",
+    "severity": "MEDIUM",
+    "aerial_detectable": true
+  },
+  {
+    "id": "CALFIRE_Z2_M",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Outbuildings and Liquid Propane Gas (LPG) storage tanks shall have 10 feet of clearance to bare mineral soil and no flammable vegetation for an additional 10 feet around their exterior.",
+    "zone": "Zone_2",
+    "item_label": "M",
+    "requirement_type": "spacing",
+    "severity": "HIGH",
+    "aerial_detectable": true
+  },
+  {
+    "id": "CALFIRE_Z2_N",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Address numbers shall be displayed in contrasting colors (4 inch minimum size) and readable from the street or access road.",
+    "zone": "ALL",
+    "item_label": "N",
+    "requirement_type": "structural",
+    "severity": "LOW",
+    "aerial_detectable": true
+  },
+  {
+    "id": "CALFIRE_Z2_O",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Equip chimney or stovepipe openings with a metal screen having openings between 3/8 inch and 1/2 inch.",
+    "zone": "ALL",
+    "item_label": "O",
+    "requirement_type": "structural",
+    "severity": "HIGH",
+    "aerial_detectable": false
+  },
+  {
+    "id": "CALFIRE_Z0_001",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Eliminate flammable materials and vegetation in the 0\u20135 foot ember-resistant zone. This zone is critical for protecting homes during wildfires.",
+    "zone": "Zone_0",
+    "item_label": "Z0-Ember",
+    "requirement_type": "removal",
+    "severity": "CRITICAL",
+    "aerial_detectable": true
+  },
+  {
+    "id": "CALFIRE_Z0_002",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Roof shall be the highest priority for ignition-resistant materials (Class A roofing). Roof and eaves/soffits shall use ignition-resistant construction.",
+    "zone": "Zone_0",
+    "item_label": "Z0-Roof",
+    "requirement_type": "material",
+    "severity": "CRITICAL",
+    "aerial_detectable": false
+  },
+  {
+    "id": "CALFIRE_Z0_003",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Cover and protect all vent openings to prevent ember intrusion. Vents shall be covered with fine mesh screening.",
+    "zone": "Zone_0",
+    "item_label": "Z0-Vents",
+    "requirement_type": "structural",
+    "severity": "CRITICAL",
+    "aerial_detectable": false
+  },
+  {
+    "id": "CALFIRE_Z0_004",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Install dual-paned windows and protect against blow-outs during wildfire.",
+    "zone": "Zone_0",
+    "item_label": "Z0-Windows",
+    "requirement_type": "structural",
+    "severity": "CRITICAL",
+    "aerial_detectable": false
+  },
+  {
+    "id": "CALFIRE_Z0_005",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Screen or enclose rain gutters to prevent vegetative debris accumulation that could ignite from embers.",
+    "zone": "Zone_0",
+    "item_label": "Z0-Gutters",
+    "requirement_type": "structural",
+    "severity": "CRITICAL",
+    "aerial_detectable": false
+  },
+  {
+    "id": "CALFIRE_Z0_006",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Cover chimney outlets with non-combustible screens to prevent ember escape or entry.",
+    "zone": "Zone_0",
+    "item_label": "Z0-Chimney",
+    "requirement_type": "structural",
+    "severity": "CRITICAL",
+    "aerial_detectable": false
+  },
+  {
+    "id": "CALFIRE_Z0_007",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Ensure driveway access to your home complies with local fire codes to allow emergency vehicle access.",
+    "zone": "ALL",
+    "item_label": "Z0-Driveway",
+    "requirement_type": "structural",
+    "severity": "MEDIUM",
+    "aerial_detectable": true
+  },
+  {
+    "id": "CALFIRE_Z0_008",
+    "type": "regulation",
+    "source": "CALFIRE_LE100A",
+    "full_text": "Have multiple garden hoses that are long enough to reach all areas of your home for fire suppression.",
+    "zone": "ALL",
+    "item_label": "Z0-Water",
+    "requirement_type": "structural",
+    "severity": "MEDIUM",
+    "aerial_detectable": false
+  }
+]

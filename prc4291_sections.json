@@ -1,0 +1,92 @@
+[
+  {
+    "section_id": "PRC_4291_A",
+    "full_text": "A person who owns, leases, controls, operates, or maintains a building or structure in the state responsibility area shall at all times do all of the following: (1) (A) Maintain defensible space of 100 feet from each side and from the front and rear of the structure, but not beyond the property line, except as provided in subparagraph (B). The amount of fuel modification necessary shall consider the flammability of the structure as affected by building material, building standards, location, and",
+    "zone_scope": "Zone_0",
+    "requirement_type": "removal"
+  },
+  {
+    "section_id": "PRC_4291_B",
+    "full_text": "A person is not required under this section to manage fuels on land if that person does not have the legal right to manage fuels, nor is a person required to enter upon or to alter property that is owned by any other person without the consent of the owner of the property.",
+    "zone_scope": "ALL",
+    "requirement_type": "structural"
+  },
+  {
+    "section_id": "PRC_4291_C",
+    "full_text": "(1) Except as provided in Section 18930 of the Health and Safety Code, the State Fire Marshal may adopt regulations exempting a structure with an exterior constructed entirely of nonflammable materials, or, conditioned upon the contents and composition of the structure, the director may vary the requirements respecting the removing or clearing away of flammable vegetation or other combustible growth with respect to the area surrounding those structures. (2) An exemption or variance under paragra",
+    "zone_scope": "ALL",
+    "requirement_type": "removal"
+  },
+  {
+    "section_id": "PRC_4291_D",
+    "full_text": "The State Fire Marshal may authorize the removal of vegetation that is not consistent with the standards of this section. The State Fire Marshal may prescribe a procedure for the removal of that vegetation and make the expense a lien upon the building, structure, or grounds, in the same manner that is applicable to a legislative body under Section 51186 of the Government Code.",
+    "zone_scope": "ALL",
+    "requirement_type": "structural"
+  },
+  {
+    "section_id": "PRC_4291_E",
+    "full_text": "(1) The board, in consultation with the State Fire Marshal, shall develop, periodically update, and post on its internet website a guidance document on fuels management pursuant to this chapter. The guidance document shall include, but not be limited to, regionally appropriate vegetation management suggestions that preserve and restore native species that are fire resistant or drought tolerant, or both, minimize erosion, minimize water consumption, and permit trees near homes for shade, aestheti",
+    "zone_scope": "ALL",
+    "requirement_type": "removal"
+  },
+  {
+    "section_id": "PRC_4291_F",
+    "full_text": "The State Fire Marshal shall do both of the following: (1) Recommend to the board the types of vegetation or fuel that are to be excluded from an ember-resistant zone based on the probability that vegetation and fuel will lead to ignition by ember of a structure as a part of the update to the guidance document pursuant to paragraph (2) of subdivision (e). (2) Make reasonable efforts to provide notice to affected residents describing the requirements added by the amendments to paragraph (1) of su",
+    "zone_scope": "ALL",
+    "requirement_type": "structural"
+  },
+  {
+    "section_id": "PRC_4291_G",
+    "full_text": "(1) The requirement for an ember-resistant zone pursuant to paragraph (1) of subdivision (a) shall not take effect for new structures until the board updates the regulations, pursuant to paragraph (1) of subdivision (a), and the guidance document, pursuant to paragraph (2) of subdivision (e). (2) The requirement for an ember-resistant zone pursuant to paragraph (1) of subdivision (a) shall take effect for existing structures three years after the effective date for the new structures.",
+    "zone_scope": "ALL",
+    "requirement_type": "structural"
+  },
+  {
+    "section_id": "PRC_4291_H",
+    "full_text": "The department shall not change defensible space inspection practices and forms or enforcement to implement the requirement for an ember-resistant zone until the State Fire Marshal makes a written finding, which the State Fire Marshal shall post on the department\u2019s internet website, that the Legislature has appropriated sufficient resources to do so.",
+    "zone_scope": "ALL",
+    "requirement_type": "structural"
+  },
+  {
+    "section_id": "PRC_4291_I",
+    "full_text": "For purposes of this section, a structure for the purpose of an ember-resistant zone shall include any attached deck. This section does not limit the authority of the board or the department to require the removal of fuel or vegetation on top of or underneath a deck pursuant to this section.",
+    "zone_scope": "ALL",
+    "requirement_type": "structural"
+  },
+  {
+    "section_id": "PRC_4291_J",
+    "full_text": "As used in this section, \u201cperson\u201d means a private individual, organization, partnership, limited liability company, or corporation. (Amended by Stats. 2025, Ch. 731, Sec. 3. (AB 1455) Effective October 13, 2025.) Next Disclaimer: These codes may not be the most recent version. California may have more current or accurate information. We make no warranties or guarantees about the accuracy, completeness, or adequacy of the information contained on this site or the information linked to on the stat",
+    "zone_scope": "ALL",
+    "requirement_type": "structural"
+  },
+  {
+    "section_id": "PRC_4291_1",
+    "full_text": "(A) Maintain defensible space of 100 feet from each side and from the front and rear of the structure, but not beyond the property line, except as provided in subparagraph (B). The amount of fuel modification necessary shall consider the flammability of the structure as affected by building material, building standards, location, and type of vegetation. Fuels shall be maintained and spaced in a condition so that a wildfire would be unlikely to ignite the structure. This subparagraph does not app",
+    "zone_scope": "Zone_0",
+    "requirement_type": "removal"
+  },
+  {
+    "section_id": "PRC_4291_2",
+    "full_text": "Remove that portion of a tree that extends within 10 feet of the outlet of a chimney or stovepipe.",
+    "zone_scope": "ALL",
+    "requirement_type": "removal"
+  },
+  {
+    "section_id": "PRC_4291_3",
+    "full_text": "Maintain a tree, shrub, or other plant adjacent to or overhanging a building free of dead or dying wood.",
+    "zone_scope": "ALL",
+    "requirement_type": "maintenance"
+  },
+  {
+    "section_id": "PRC_4291_4",
+    "full_text": "Maintain the roof of a structure free of leaves, needles, or other vegetative materials.",
+    "zone_scope": "ALL",
+    "requirement_type": "maintenance"
+  },
+  {
+    "section_id": "PRC_4291_5",
+    "full_text": "Before constructing a new building or structure or rebuilding a building or structure damaged by a fire in an area subject to this section, the construction or rebuilding of which requires a building permit, the owner shall obtain a certification from the local building official that the dwelling or structure, as proposed to be built, complies with all applicable state and local building standards, including those described in subdivision (b) of Section 51189 of the Government Code, and shall pr",
+    "zone_scope": "ALL",
+    "requirement_type": "structural"
+  }
+]

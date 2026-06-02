@@ -1,0 +1,285 @@
+[
+  {
+    "calfire_id": "CALFIRE_Z1_A",
+    "zone": "Zone_1",
+    "item_label": "A",
+    "requirement_text": "Remove all branches within 10 feet of any chimney or stovepipe outlet.",
+    "object_mentions": [],
+    "aerial_detectable": false,
+    "requirement_type": "removal",
+    "severity": "HIGH"
+  },
+  {
+    "calfire_id": "CALFIRE_Z1_B",
+    "zone": "Zone_0",
+    "item_label": "B",
+    "requirement_text": "Remove leaves, needles or other vegetation on roofs, gutters, decks, porches, stairways, etc.",
+    "object_mentions": [
+      "debris",
+      "deck_patio"
+    ],
+    "aerial_detectable": true,
+    "requirement_type": "removal",
+    "severity": "CRITICAL"
+  },
+  {
+    "calfire_id": "CALFIRE_Z1_C",
+    "zone": "Zone_1",
+    "item_label": "C",
+    "requirement_text": "Remove dead tree or shrub branches that overhang roofs, below or adjacent to windows, or which are adjacent to wall surfaces.",
+    "object_mentions": [
+      "dead_vegetation",
+      "live_tree",
+      "live_shrub"
+    ],
+    "aerial_detectable": true,
+    "requirement_type": "removal",
+    "severity": "HIGH"
+  },
+  {
+    "calfire_id": "CALFIRE_Z1_D",
+    "zone": "Zone_1",
+    "item_label": "D",
+    "requirement_text": "Remove all dead and dying grass, plants, shrubs, trees, branches, leaves, weeds and needles.",
+    "object_mentions": [
+      "dead_vegetation",
+      "live_herb",
+      "live_shrub",
+      "live_tree",
+      "debris"
+    ],
+    "aerial_detectable": true,
+    "requirement_type": "removal",
+    "severity": "HIGH"
+  },
+  {
+    "calfire_id": "CALFIRE_Z1_E",
+    "zone": "Zone_1",
+    "item_label": "E",
+    "requirement_text": "Remove or separate fuels to maintain spacing between vegetation to interrupt fire's path. Prune limbs; separate plants and ground cover.",
+    "object_mentions": [
+      "live_shrub",
+      "live_tree",
+      "live_herb"
+    ],
+    "aerial_detectable": true,
+    "requirement_type": "clearance",
+    "severity": "HIGH"
+  },
+  {
+    "calfire_id": "CALFIRE_Z1_F",
+    "zone": "Zone_1",
+    "item_label": "F",
+    "requirement_text": "Remove flammable vegetation and items that could catch fire which are adjacent to, or below, combustible decks, balconies, and stairs.",
+    "object_mentions": [
+      "deck_patio",
+      "vegetation",
+      "debris"
+    ],
+    "aerial_detectable": true,
+    "requirement_type": "removal",
+    "severity": "HIGH"
+  },
+  {
+    "calfire_id": "CALFIRE_Z1_G",
+    "zone": "Zone_1",
+    "item_label": "G",
+    "requirement_text": "Relocate exposed wood piles outside of Zone 1 (30 ft) unless completely covered in a fire-resistant material.",
+    "object_mentions": [
+      "woodpile"
+    ],
+    "aerial_detectable": true,
+    "requirement_type": "spacing",
+    "severity": "HIGH"
+  },
+  {
+    "calfire_id": "CALFIRE_Z2_H",
+    "zone": "Zone_2",
+    "item_label": "H",
+    "requirement_text": "Cut annual grasses and forbs down to a maximum height of 4 inches.",
+    "object_mentions": [
+      "live_herb"
+    ],
+    "aerial_detectable": true,
+    "requirement_type": "clearance",
+    "severity": "MEDIUM"
+  },
+  {
+    "calfire_id": "CALFIRE_Z2_I",
+    "zone": "Zone_2",
+    "item_label": "I",
+    "requirement_text": "Remove fuels to create proper horizontal and vertical spacing among shrubs and trees, and remove lower tree limbs (ladder fuels).",
+    "object_mentions": [
+      "live_tree",
+      "live_shrub"
+    ],
+    "aerial_detectable": true,
+    "requirement_type": "clearance",
+    "severity": "MEDIUM"
+  },
+  {
+    "calfire_id": "CALFIRE_Z2_J",
+    "zone": "Zone_2",
+    "item_label": "J",
+    "requirement_text": "All exposed wood piles must have a minimum of 10 feet clearance, down to bare mineral soil, in all directions.",
+    "object_mentions": [
+      "woodpile"
+    ],
+    "aerial_detectable": true,
+    "requirement_type": "spacing",
+    "severity": "MEDIUM"
+  },
+  {
+    "calfire_id": "CALFIRE_Z2_K",
+    "zone": "Zone_2",
+    "item_label": "K",
+    "requirement_text": "Remove all dead and dying trees, branches, shrubs, or other plants, and surface debris. Loose surface litter (fallen leaves, needles, twigs, bark, cones) shall be permitted to a depth of 3 inches.",
+    "object_mentions": [
+      "dead_vegetation",
+      "live_tree",
+      "debris"
+    ],
+    "aerial_detectable": true,
+    "requirement_type": "removal",
+    "severity": "MEDIUM"
+  },
+  {
+    "calfire_id": "CALFIRE_Z2_L",
+    "zone": "Zone_2",
+    "item_label": "L",
+    "requirement_text": "Logs or stumps embedded in the soil must be removed or isolated from other vegetation.",
+    "object_mentions": [
+      "dead_vegetation",
+      "debris"
+    ],
+    "aerial_detectable": true,
+    "requirement_type": "removal",
+    "severity": "MEDIUM"
+  },
+  {
+    "calfire_id": "CALFIRE_Z2_M",
+    "zone": "Zone_2",
+    "item_label": "M",
+    "requirement_text": "Outbuildings and Liquid Propane Gas (LPG) storage tanks shall have 10 feet of clearance to bare mineral soil and no flammable vegetation for an additional 10 feet around their exterior.",
+    "object_mentions": [
+      "storage_shed",
+      "propane"
+    ],
+    "aerial_detectable": true,
+    "requirement_type": "spacing",
+    "severity": "HIGH"
+  },
+  {
+    "calfire_id": "CALFIRE_Z2_N",
+    "zone": "ALL",
+    "item_label": "N",
+    "requirement_text": "Address numbers shall be displayed in contrasting colors (4 inch minimum size) and readable from the street or access road.",
+    "object_mentions": [
+      "address_sign"
+    ],
+    "aerial_detectable": true,
+    "requirement_type": "structural",
+    "severity": "LOW"
+  },
+  {
+    "calfire_id": "CALFIRE_Z2_O",
+    "zone": "ALL",
+    "item_label": "O",
+    "requirement_text": "Equip chimney or stovepipe openings with a metal screen having openings between 3/8 inch and 1/2 inch.",
+    "object_mentions": [],
+    "aerial_detectable": false,
+    "requirement_type": "structural",
+    "severity": "HIGH"
+  },
+  {
+    "calfire_id": "CALFIRE_Z0_001",
+    "zone": "Zone_0",
+    "item_label": "Z0-Ember",
+    "requirement_text": "Eliminate flammable materials and vegetation in the 0\u20135 foot ember-resistant zone. This zone is critical for protecting homes during wildfires.",
+    "object_mentions": [
+      "vegetation",
+      "mulch",
+      "debris",
+      "live_herb"
+    ],
+    "aerial_detectable": true,
+    "requirement_type": "removal",
+    "severity": "CRITICAL"
+  },
+  {
+    "calfire_id": "CALFIRE_Z0_002",
+    "zone": "Zone_0",
+    "item_label": "Z0-Roof",
+    "requirement_text": "Roof shall be the highest priority for ignition-resistant materials (Class A roofing). Roof and eaves/soffits shall use ignition-resistant construction.",
+    "object_mentions": [],
+    "aerial_detectable": false,
+    "requirement_type": "material",
+    "severity": "CRITICAL"
+  },
+  {
+    "calfire_id": "CALFIRE_Z0_003",
+    "zone": "Zone_0",
+    "item_label": "Z0-Vents",
+    "requirement_text": "Cover and protect all vent openings to prevent ember intrusion. Vents shall be covered with fine mesh screening.",
+    "object_mentions": [],
+    "aerial_detectable": false,
+    "requirement_type": "structural",
+    "severity": "CRITICAL"
+  },
+  {
+    "calfire_id": "CALFIRE_Z0_004",
+    "zone": "Zone_0",
+    "item_label": "Z0-Windows",
+    "requirement_text": "Install dual-paned windows and protect against blow-outs during wildfire.",
+    "object_mentions": [],
+    "aerial_detectable": false,
+    "requirement_type": "structural",
+    "severity": "CRITICAL"
+  },
+  {
+    "calfire_id": "CALFIRE_Z0_005",
+    "zone": "Zone_0",
+    "item_label": "Z0-Gutters",
+    "requirement_text": "Screen or enclose rain gutters to prevent vegetative debris accumulation that could ignite from embers.",
+    "object_mentions": [
+      "debris"
+    ],
+    "aerial_detectable": false,
+    "requirement_type": "structural",
+    "severity": "CRITICAL"
+  },
+  {
+    "calfire_id": "CALFIRE_Z0_006",
+    "zone": "Zone_0",
+    "item_label": "Z0-Chimney",
+    "requirement_text": "Cover chimney outlets with non-combustible screens to prevent ember escape or entry.",
+    "object_mentions": [],
+    "aerial_detectable": false,
+    "requirement_type": "structural",
+    "severity": "CRITICAL"
+  },
+  {
+    "calfire_id": "CALFIRE_Z0_007",
+    "zone": "ALL",
+    "item_label": "Z0-Driveway",
+    "requirement_text": "Ensure driveway access to your home complies with local fire codes to allow emergency vehicle access.",
+    "object_mentions": [
+      "driveway"
+    ],
+    "aerial_detectable": true,
+    "requirement_type": "structural",
+    "severity": "MEDIUM"
+  },
+  {
+    "calfire_id": "CALFIRE_Z0_008",
+    "zone": "ALL",
+    "item_label": "Z0-Water",
+    "requirement_text": "Have multiple garden hoses that are long enough to reach all areas of your home for fire suppression.",
+    "object_mentions": [
+      "hoses"
+    ],
+    "aerial_detectable": false,
+    "requirement_type": "structural",
+    "severity": "MEDIUM"
+  }
+]

@@ -1,0 +1,81 @@
+# ──────────────────────────────────────────────
+# Private research data — not for public release
+# ──────────────────────────────────────────────
+
+# Raw in-situ field data
+2024 HIZ In-Situ Data for Caitlin.xlsx
+Table6_AllCommunities_Analysis_v3.xlsx
+
+# Manuscript drafts
+Basanth_Manuscript.docx
+Basanth_Manuscript_Proposal.docx
+
+# Copyrighted technical standards (PDFs)
+*.pdf
+WFPH-Technical-Standard.pdf
+calfire_le100a_sample.pdf
+AI-Powered Wildfire HIZ Assessment*.pdf
+
+# Proprietary parcel spatial index
+tahoe_parcel_index.json
+
+# ──────────────────────────────────────────────
+# Inference and analysis output files
+# (regenerated from the pipeline; too large or
+#  contain parcel-level location data)
+# ──────────────────────────────────────────────
+vlm_inference_results.json
+vlm_inference_summary.xlsx
+vlm_inference_figures.xlsx
+vlm_inference_analysis.txt
+vlm_inference_log.txt
+dataset_analysis_report.txt
+
+# ──────────────────────────────────────────────
+# Pre-annotation ground truth imagery
+# (raw drone orthomosaic tiles and COCO labels —
+#  not redistributable without data-sharing agreement)
+# ──────────────────────────────────────────────
+preannotations/
+
+# ──────────────────────────────────────────────
+# OS and editor artifacts
+# ──────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+*.swp
+*.swo
+*~
+
+# ──────────────────────────────────────────────
+# Python
+# ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# ──────────────────────────────────────────────
+# IDE and tool settings
+# ──────────────────────────────────────────────
+.vscode/
+.idea/
+.claude/
+*.code-workspace

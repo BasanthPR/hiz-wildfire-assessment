@@ -1,0 +1,407 @@
+[
+  {
+    "object_class": "woodpile",
+    "aliases": [
+      "firewood",
+      "wood pile",
+      "wood stack"
+    ],
+    "typical_zone": "Zone_1",
+    "aerial_visible": true,
+    "approximate_size_ft": "2-4ft",
+    "notes": "In-situ survey questions matched: 57"
+  },
+  {
+    "object_class": "furniture",
+    "aliases": [
+      "patio furniture",
+      "chair",
+      "chair cushion"
+    ],
+    "typical_zone": "Zone_0",
+    "aerial_visible": true,
+    "approximate_size_ft": "1-3ft",
+    "notes": "In-situ survey questions matched: 4"
+  },
+  {
+    "object_class": "car",
+    "aliases": [
+      "vehicle",
+      "automobile",
+      "parked car"
+    ],
+    "typical_zone": "Zone_1",
+    "aerial_visible": true,
+    "approximate_size_ft": "6-15ft",
+    "notes": "In-situ survey questions matched: 6"
+  },
+  {
+    "object_class": "rv",
+    "aliases": [
+      "recreational vehicle",
+      "trailer",
+      "camper"
+    ],
+    "typical_zone": "Zone_2",
+    "aerial_visible": true,
+    "approximate_size_ft": "10-30ft",
+    "notes": "In-situ survey questions matched: 1"
+  },
+  {
+    "object_class": "above_ground_pool_or_hot_tub",
+    "aliases": [
+      "hot tub",
+      "spa",
+      "jacuzzi",
+      "above ground pool"
+    ],
+    "typical_zone": "Zone_1",
+    "aerial_visible": true,
+    "approximate_size_ft": "4-8ft",
+    "notes": "In-situ survey questions matched: 30"
+  },
+  {
+    "object_class": "play_set",
+    "aliases": [
+      "playset",
+      "kids toy",
+      "swing set",
+      "jungle gym"
+    ],
+    "typical_zone": "Zone_1",
+    "aerial_visible": true,
+    "approximate_size_ft": "6-12ft",
+    "notes": "In-situ survey questions matched: 4"
+  },
+  {
+    "object_class": "pergola_gazebo",
+    "aliases": [
+      "pergola",
+      "gazebo",
+      "overhead structure",
+      "carport"
+    ],
+    "typical_zone": "Zone_1",
+    "aerial_visible": true,
+    "approximate_size_ft": "8-20ft",
+    "notes": "In-situ survey questions matched: 4"
+  },
+  {
+    "object_class": "garbage_bin",
+    "aliases": [
+      "trash bin",
+      "recycle bin",
+      "trash can",
+      "garbage can",
+      "waste bin"
+    ],
+    "typical_zone": "Zone_0",
+    "aerial_visible": true,
+    "approximate_size_ft": "2-4ft",
+    "notes": "In-situ survey questions matched: 2"
+  },
+  {
+    "object_class": "boat",
+    "aliases": [
+      "watercraft",
+      "kayak",
+      "canoe"
+    ],
+    "typical_zone": "Zone_2",
+    "aerial_visible": true,
+    "approximate_size_ft": "8-20ft",
+    "notes": "In-situ survey questions matched: 1"
+  },
+  {
+    "object_class": "propane",
+    "aliases": [
+      "propane tank",
+      "lpg",
+      "gas tank",
+      "liquified petroleum"
+    ],
+    "typical_zone": "Zone_0",
+    "aerial_visible": true,
+    "approximate_size_ft": "2-5ft",
+    "notes": "In-situ survey questions matched: 63"
+  },
+  {
+    "object_class": "storage_shed",
+    "aliases": [
+      "shed",
+      "outbuilding",
+      "adu",
+      "accessory structure",
+      "greenhouse"
+    ],
+    "typical_zone": "Zone_1",
+    "aerial_visible": true,
+    "approximate_size_ft": "6-15ft",
+    "notes": "In-situ survey questions matched: 39"
+  },
+  {
+    "object_class": "clutter",
+    "aliases": [
+      "miscellaneous items",
+      "junk",
+      "debris pile"
+    ],
+    "typical_zone": "Zone_0",
+    "aerial_visible": true,
+    "approximate_size_ft": "1-5ft",
+    "notes": "In-situ survey questions matched: 1"
+  },
+  {
+    "object_class": "planters",
+    "aliases": [
+      "potted plant",
+      "planter box",
+      "flower pot"
+    ],
+    "typical_zone": "Zone_0",
+    "aerial_visible": true,
+    "approximate_size_ft": "1-3ft",
+    "notes": "In-situ survey questions matched: 3"
+  },
+  {
+    "object_class": "fuel_breaks",
+    "aliases": [
+      "firebreak",
+      "fuel break zone"
+    ],
+    "typical_zone": "ALL",
+    "aerial_visible": true,
+    "approximate_size_ft": "varies",
+    "notes": "In-situ survey questions matched: 1"
+  },
+  {
+    "object_class": "irrigation",
+    "aliases": [
+      "sprinkler",
+      "drip line",
+      "irrigation system"
+    ],
+    "typical_zone": "ALL",
+    "aerial_visible": false,
+    "approximate_size_ft": "small",
+    "notes": "In-situ survey questions matched: 2"
+  },
+  {
+    "object_class": "driveway",
+    "aliases": [
+      "access road",
+      "parking area"
+    ],
+    "typical_zone": "Zone_1",
+    "aerial_visible": true,
+    "approximate_size_ft": "varies",
+    "notes": "In-situ survey questions matched: 8"
+  },
+  {
+    "object_class": "welcome_mat",
+    "aliases": [
+      "door mat",
+      "entry mat"
+    ],
+    "typical_zone": "Zone_0",
+    "aerial_visible": true,
+    "approximate_size_ft": "<1ft",
+    "notes": "In-situ survey questions matched: 3"
+  },
+  {
+    "object_class": "address_sign",
+    "aliases": [
+      "house number",
+      "street sign"
+    ],
+    "typical_zone": "Zone_0",
+    "aerial_visible": true,
+    "approximate_size_ft": "<1ft",
+    "notes": "In-situ survey questions matched: 0"
+  },
+  {
+    "object_class": "fuel_or_flame_wick",
+    "aliases": [
+      "flame wick",
+      "tiki torch",
+      "firestarter"
+    ],
+    "typical_zone": "Zone_0",
+    "aerial_visible": true,
+    "approximate_size_ft": "<2ft",
+    "notes": "In-situ survey questions matched: 2"
+  },
+  {
+    "object_class": "hoses",
+    "aliases": [
+      "garden hose",
+      "water hose"
+    ],
+    "typical_zone": "Zone_0",
+    "aerial_visible": false,
+    "approximate_size_ft": "varies",
+    "notes": "In-situ survey questions matched: 1"
+  },
+  {
+    "object_class": "broom",
+    "aliases": [
+      "push broom",
+      "yard broom"
+    ],
+    "typical_zone": "Zone_0",
+    "aerial_visible": false,
+    "approximate_size_ft": "<1ft",
+    "notes": "In-situ survey questions matched: 2"
+  },
+  {
+    "object_class": "ladder",
+    "aliases": [
+      "step ladder",
+      "extension ladder",
+      "ladder"
+    ],
+    "typical_zone": "Zone_1",
+    "aerial_visible": true,
+    "approximate_size_ft": "4-12ft",
+    "notes": "In-situ survey questions matched: 7"
+  },
+  {
+    "object_class": "portable_gas_pump",
+    "aliases": [
+      "gas pump",
+      "fuel pump",
+      "generator"
+    ],
+    "typical_zone": "Zone_1",
+    "aerial_visible": true,
+    "approximate_size_ft": "2-4ft",
+    "notes": "In-situ survey questions matched: 1"
+  },
+  {
+    "object_class": "curtains",
+    "aliases": [
+      "window covering",
+      "drapes",
+      "blinds"
+    ],
+    "typical_zone": "ALL",
+    "aerial_visible": false,
+    "approximate_size_ft": "varies",
+    "notes": "In-situ survey questions matched: 2"
+  },
+  {
+    "object_class": "lights",
+    "aliases": [
+      "outdoor light",
+      "string light",
+      "flood light"
+    ],
+    "typical_zone": "Zone_1",
+    "aerial_visible": true,
+    "approximate_size_ft": "small",
+    "notes": "In-situ survey questions matched: 3"
+  },
+  {
+    "object_class": "live_herb",
+    "aliases": [
+      "herb",
+      "grass",
+      "ground cover",
+      "succulent",
+      "flower",
+      "weed"
+    ],
+    "typical_zone": "Zone_0",
+    "aerial_visible": true,
+    "approximate_size_ft": "<0.5ft",
+    "notes": "In-situ survey questions matched: 58"
+  },
+  {
+    "object_class": "live_shrub",
+    "aliases": [
+      "shrub",
+      "bush",
+      "chaparral"
+    ],
+    "typical_zone": "Zone_1",
+    "aerial_visible": true,
+    "approximate_size_ft": "0.5-6ft",
+    "notes": "In-situ survey questions matched: 65"
+  },
+  {
+    "object_class": "live_tree",
+    "aliases": [
+      "tree",
+      "tree crown"
+    ],
+    "typical_zone": "Zone_2",
+    "aerial_visible": true,
+    "approximate_size_ft": ">6ft",
+    "notes": "In-situ survey questions matched: 80"
+  },
+  {
+    "object_class": "dead_vegetation",
+    "aliases": [
+      "dead veg",
+      "dead plant",
+      "dried grass",
+      "needles",
+      "leaves"
+    ],
+    "typical_zone": "Zone_0",
+    "aerial_visible": true,
+    "approximate_size_ft": "varies",
+    "notes": "In-situ survey questions matched: 6"
+  },
+  {
+    "object_class": "mulch",
+    "aliases": [
+      "wood chip mulch",
+      "bark mulch",
+      "organic mulch"
+    ],
+    "typical_zone": "Zone_0",
+    "aerial_visible": true,
+    "approximate_size_ft": "<0.5ft",
+    "notes": "In-situ survey questions matched: 6"
+  },
+  {
+    "object_class": "deck_patio",
+    "aliases": [
+      "deck",
+      "patio",
+      "balcony",
+      "stairway",
+      "porch"
+    ],
+    "typical_zone": "Zone_0",
+    "aerial_visible": true,
+    "approximate_size_ft": "4-20ft",
+    "notes": "In-situ survey questions matched: 40"
+  },
+  {
+    "object_class": "fence",
+    "aliases": [
+      "wood fence",
+      "fencing",
+      "gate"
+    ],
+    "typical_zone": "Zone_1",
+    "aerial_visible": true,
+    "approximate_size_ft": "3-6ft",
+    "notes": "In-situ survey questions matched: 17"
+  },
+  {
+    "object_class": "bbq_grill",
+    "aliases": [
+      "bbq",
+      "grill",
+      "barbecue",
+      "outdoor kitchen"
+    ],
+    "typical_zone": "Zone_0",
+    "aerial_visible": true,
+    "approximate_size_ft": "2-4ft",
+    "notes": "In-situ survey questions matched: 1"
+  }
+]

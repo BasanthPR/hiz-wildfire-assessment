@@ -1,0 +1,132 @@
+======================================================================
+HIZ WILDFIRE KNOWLEDGE GRAPH — VALIDATION REPORT (POST LE-100a UPDATE)
+Generated: 2026-04-21 15:36:16
+======================================================================
+
+── NODE COUNTS ──
+  object                                       : 33
+  regulation:CALFIRE_LE100A                    : 23
+  regulation:IBHS_WFPH                         : 248
+  regulation:PRC_4291                          : 15
+  violation                                    : 24
+  zone                                         : 3
+  TOTAL                                        : 346
+
+── EDGE COUNTS BY RELATION ──
+  subject_to                                   : 8220
+  covered_by                                   : 732
+  governed_by                                  : 495
+  defines                                      : 67
+  typically_found_in                           : 39
+  can_cause                                    : 26
+  occurs_in                                    : 24
+  TOTAL                                        : 9603
+
+── CALFIRE LE-100A REQUIREMENTS ADDED ──
+  Total: 23 requirements
+  [Zone_0/CRITICAL] CALFIRE_Z0_001             (Item Z0-Ember)
+  [Zone_0/CRITICAL] CALFIRE_Z0_002             (Item Z0-Roof)
+  [Zone_0/CRITICAL] CALFIRE_Z0_003             (Item Z0-Vents)
+  [Zone_0/CRITICAL] CALFIRE_Z0_004             (Item Z0-Windows)
+  [Zone_0/CRITICAL] CALFIRE_Z0_005             (Item Z0-Gutters)
+  [Zone_0/CRITICAL] CALFIRE_Z0_006             (Item Z0-Chimney)
+  [ALL   /MEDIUM  ] CALFIRE_Z0_007             (Item Z0-Driveway)
+  [ALL   /MEDIUM  ] CALFIRE_Z0_008             (Item Z0-Water)
+  [Zone_1/HIGH    ] CALFIRE_Z1_A               (Item A)
+  [Zone_0/CRITICAL] CALFIRE_Z1_B               (Item B)
+  [Zone_1/HIGH    ] CALFIRE_Z1_C               (Item C)
+  [Zone_1/HIGH    ] CALFIRE_Z1_D               (Item D)
+  [Zone_1/HIGH    ] CALFIRE_Z1_E               (Item E)
+  [Zone_1/HIGH    ] CALFIRE_Z1_F               (Item F)
+  [Zone_1/HIGH    ] CALFIRE_Z1_G               (Item G)
+  [Zone_2/MEDIUM  ] CALFIRE_Z2_H               (Item H)
+  [Zone_2/MEDIUM  ] CALFIRE_Z2_I               (Item I)
+  [Zone_2/MEDIUM  ] CALFIRE_Z2_J               (Item J)
+  [Zone_2/MEDIUM  ] CALFIRE_Z2_K               (Item K)
+  [Zone_2/MEDIUM  ] CALFIRE_Z2_L               (Item L)
+  [Zone_2/HIGH    ] CALFIRE_Z2_M               (Item M)
+  [ALL   /LOW     ] CALFIRE_Z2_N               (Item N)
+  [ALL   /HIGH    ] CALFIRE_Z2_O               (Item O)
+
+── NEW CALFIRE → VIOLATION CONNECTIONS ──
+  CALFIRE_Z0_001            → Vegetation_within_Zone0, Combustible_within_Zone0, Mulch_within_Zone0
+  CALFIRE_Z0_005            → Gutter_not_cleared, Roof_debris_present
+  CALFIRE_Z1_B              → Roof_debris_present, Gutter_not_cleared, Debris_accumulation
+  CALFIRE_Z1_C              → Dead_vegetation_present
+  CALFIRE_Z1_D              → Dead_vegetation_present, Debris_accumulation
+  CALFIRE_Z1_E              → Tree_crown_overlap, Vegetation_within_Zone0
+  CALFIRE_Z1_F              → Combustible_within_Zone0, Debris_accumulation
+  CALFIRE_Z1_G              → Firewood_within_30ft
+  CALFIRE_Z2_H              → Dead_vegetation_present
+  CALFIRE_Z2_I              → Tree_crown_overlap
+  CALFIRE_Z2_J              → Firewood_within_30ft
+  CALFIRE_Z2_K              → Dead_vegetation_present, Debris_accumulation
+  CALFIRE_Z2_L              → Debris_accumulation
+  CALFIRE_Z2_M              → Shed_too_close_to_home, Propane_within_5ft
+
+── OBJECTS GAINING NEW CALFIRE EDGES ──
+  address_sign                       : 1 CALFIRE reqs
+  dead_vegetation                    : 8 CALFIRE reqs
+  deck_patio                         : 2 CALFIRE reqs
+  driveway                           : 1 CALFIRE reqs
+  hoses                              : 1 CALFIRE reqs
+  live_herb                          : 5 CALFIRE reqs
+  live_shrub                         : 6 CALFIRE reqs
+  live_tree                          : 7 CALFIRE reqs
+  mulch                              : 1 CALFIRE reqs
+  propane                            : 1 CALFIRE reqs
+  storage_shed                       : 1 CALFIRE reqs
+  woodpile                           : 2 CALFIRE reqs
+
+── REGULATORY SOURCE COVERAGE PER OBJECT ──
+  above_ground_pool_or_hot_tub       : IBHS_WFPH, PRC_4291
+  address_sign                       : CALFIRE_LE100A, IBHS_WFPH, PRC_4291
+  bbq_grill                          : IBHS_WFPH, PRC_4291
+  boat                               : IBHS_WFPH, PRC_4291
+  broom                              : IBHS_WFPH, PRC_4291
+  car                                : IBHS_WFPH, PRC_4291
+  clutter                            : IBHS_WFPH, PRC_4291
+  curtains                           : IBHS_WFPH, PRC_4291
+  dead_vegetation                    : CALFIRE_LE100A, IBHS_WFPH, PRC_4291
+  deck_patio                         : CALFIRE_LE100A, IBHS_WFPH, PRC_4291
+  driveway                           : CALFIRE_LE100A, IBHS_WFPH, PRC_4291
+  fence                              : IBHS_WFPH, PRC_4291
+  fuel_breaks                        : IBHS_WFPH, PRC_4291
+  fuel_or_flame_wick                 : IBHS_WFPH, PRC_4291
+  furniture                          : IBHS_WFPH, PRC_4291
+  garbage_bin                        : IBHS_WFPH, PRC_4291
+  hoses                              : CALFIRE_LE100A, IBHS_WFPH, PRC_4291
+  irrigation                         : IBHS_WFPH, PRC_4291
+  ladder                             : IBHS_WFPH, PRC_4291
+  lights                             : IBHS_WFPH, PRC_4291
+  live_herb                          : CALFIRE_LE100A, IBHS_WFPH, PRC_4291
+  live_shrub                         : CALFIRE_LE100A, IBHS_WFPH, PRC_4291
+  live_tree                          : CALFIRE_LE100A, IBHS_WFPH, PRC_4291
+  mulch                              : CALFIRE_LE100A, IBHS_WFPH, PRC_4291
+  pergola_gazebo                     : IBHS_WFPH, PRC_4291
+  planters                           : IBHS_WFPH, PRC_4291
+  play_set                           : IBHS_WFPH, PRC_4291
+  portable_gas_pump                  : IBHS_WFPH, PRC_4291
+  propane                            : CALFIRE_LE100A, IBHS_WFPH, PRC_4291
+  rv                                 : IBHS_WFPH, PRC_4291
+  storage_shed                       : CALFIRE_LE100A, IBHS_WFPH, PRC_4291
+  welcome_mat                        : IBHS_WFPH, PRC_4291
+  woodpile                           : CALFIRE_LE100A, IBHS_WFPH, PRC_4291
+
+── VIOLATIONS PER ZONE ──
+  Zone_0: 14 violations
+  Zone_1: 8 violations
+  Zone_2: 2 violations
+
+── OUTPUT FILES ──
+  ✓  calfire_le100a_requirements.json
+  ✓  knowledge_graph_nodes.json
+  ✓  knowledge_graph_edges.json
+  ✓  knowledge_graph.graphml
+  ✓  knowledge_graph_static.png
+  ✓  knowledge_graph_interactive.html
+  ✓  knowledge_graph_edge_coverage.xlsx
+  ✓  aerial_detectability_partition.xlsx
+  ✓  graph_validation_report.txt
+
+======================================================================
